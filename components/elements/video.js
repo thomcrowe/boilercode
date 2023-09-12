@@ -1,4 +1,4 @@
-export default function Video() {
+export default function Video({ videoUrl }) {
   return (
     <>
       <video
@@ -6,7 +6,7 @@ export default function Video() {
         controls
         style={{ width: "90%", height: "80%" }}
       >
-        <source src="/product-video.mp4" type="video/mp4" />
+        <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </>

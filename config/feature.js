@@ -24,7 +24,7 @@ const features = [
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout/buy/1869026f-194e-4805-89b3-ded98fa974d6?embed=1",
-    moreDetails: "/nextjs-boilerplate",
+    moreDetails: "/nextjs-boilerplate-for-saas",
   },
   {
     Icon: TbBrandReact,
