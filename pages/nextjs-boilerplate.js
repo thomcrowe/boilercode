@@ -8,6 +8,9 @@ import LandingFooter from "@/components/landingPage/landingFooter";
 import LandingCta from "@/components/landingPage/landingCta";
 import { useTheme } from "next-themes";
 import LandingTastimonials from "@/components/landingPage/landingTestimonials";
+import DetailsHero from "@/components/details/detailsHero";
+import DetailsHowTo from "@/components/details/detailsHowTo";
+import DetailsFeature from "@/components/details/detailsFeature";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -17,14 +20,12 @@ export default function Home() {
 
   return (
     <>
-      <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
       <LandingLayout>
         <LandingHeader />
-        <main className="space-y-40 mb-0">
-          <LandingHero />
-          <LandingFeature />
-          {/* <LandingPricing /> */}
-          <LandingCta />
+        <main className="space-y-20 mb-0">
+          <DetailsHero />
+          <DetailsFeature />
+          <DetailsHowTo />
         </main>
         <LandingFooter />
       </LandingLayout>
