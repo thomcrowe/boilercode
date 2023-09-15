@@ -27,12 +27,13 @@ const LandingFeature = () => {
             </p>
           </div>
           <div
-            className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl 
-       border text-gray-600 border-gray-100 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-2 
-       lg:divide-y-0 xl:grid-cols-2"
+            className="mt-16 grid overflow-hidden rounded-3xl divide-x divide-y divide-gray-100 dark:divide-gray-700
+       border text-gray-600 border-gray-100 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-2  xl:grid-cols-2"
           >
             {features.map((feature, index) => (
-              <Card data={feature} key={index} />
+              <div className="" key={"feature_" + index}>
+                <Card data={feature} />
+              </div>
             ))}
           </div>
         </LandingContainer>
