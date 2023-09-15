@@ -25,7 +25,7 @@ export default function LandingHero() {
 
   return (
     <>
-      <div className="relative" id="home">
+      <div className="relative">
         <div
           aria-hidden="true"
           className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-20"
@@ -43,16 +43,16 @@ export default function LandingHero() {
               </h1>
 
               <p className="mt-8 text-gray-700 dark:text-gray-300 text-3xl">
-                Ship your <span className="font-bold text-primary underline">SaaS</span> Super Fast
+                Ship your{" "}
+                <span className="font-bold text-primary underline">SaaS</span>{" "}
+                Super Fast
               </p>
               <div className="mt-12 flex flex-wrap justify-center gap-y-4 gap-x-4">
-                <>
-                  <Button
-                    link="#features"
-                    text="Explore Boilerplate Code"
-                    type="primary"
-                  />
-                </>
+                <Button
+                  link="#features"
+                  text="Explore Boilerplates"
+                  type="primary"
+                />
               </div>
               <div className="py-8 mt-16 border-y border-gray-800 sm:flex flex-col sm:flex-row justify-between items-center">
                 <div className="text-center flex-1 mb-4 sm:mb-0">

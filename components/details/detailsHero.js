@@ -3,7 +3,7 @@ import { React, useEffect, useState } from "react";
 import Button from "../elements/button";
 import ProductHunt from "../elements/productHunt";
 
-export default function DetailsHero() {
+export default function DetailsHero({ title }) {
   const words = ["NextJs", "React", "React Native", "Chrome Extension"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentTyping, setCurrentTyping] = useState("");
@@ -25,7 +25,7 @@ export default function DetailsHero() {
 
   return (
     <>
-      <div className="relative" id="home">
+      <div className="relative">
         <div
           aria-hidden="true"
           className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-20"
@@ -38,7 +38,7 @@ export default function DetailsHero() {
             <div className="lg:w-2/3 text-center mx-auto">
               <ProductHunt />
               <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
-                NextJs Boilerplate for SaaS
+                {title}
               </h1>
 
               <div className="mt-12 flex flex-wrap justify-center gap-y-4 gap-x-4">

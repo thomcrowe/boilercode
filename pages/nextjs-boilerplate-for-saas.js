@@ -14,7 +14,7 @@ import DetailsFeature from "@/components/details/detailsFeature";
 import Button from "@/components/elements/button";
 import DetailsCta from "@/components/details/detailsCta";
 
-export default function Home() {
+export default function NextJsHome() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
 
@@ -25,8 +25,8 @@ export default function Home() {
       <LandingLayout>
         <LandingHeader />
         <main className="space-y-20 mb-0">
-          <DetailsHero />
-          <DetailsFeature />
+          <DetailsHero title="NextJs Boilerplate for SaaS" />
+          <DetailsFeature id="nextjs" />
           <DetailsHowTo
             title="NextJs Boilerplace Demo"
             subtitle="Here is how you can use NextJs Boilerplate to ship fast"
@@ -37,7 +37,7 @@ export default function Home() {
             subtitle="You can Integrate with Stripe and LemonSqueezy superfast"
             videoUrl="nextjs-boilerplate-2.mp4"
           />
-          <DetailsCta />
+          <DetailsCta id="nextjs" subtitle="Get NextJs SaaS Boilerplate now" />
         </main>
         <LandingFooter />
       </LandingLayout>

@@ -4,13 +4,13 @@ const LandingFooter = () => {
   return (
     <footer className="border-t border-gray-100">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div
+        {/* <div
           aria-hidden="true"
           className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20"
         >
           <div className="blur-[106px] h-56 bg-gradient-to-br to-purple-400 from-blue-700"></div>
           <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400  to-indigo-600"></div>
-        </div>
+        </div> */}
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://boilercode.co/" className="flex items-center">

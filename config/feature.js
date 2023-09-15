@@ -8,7 +8,8 @@ import {
 const features = [
   {
     Icon: TbBrandNextjs,
-    title: "NextJs",
+    id: "nextjs",
+    title: "NextJs SaaS",
     description:
       "NextJs SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
     features: [
@@ -24,10 +25,44 @@ const features = [
       "Customer Support (Crisp)",
       "Custom SEO Configurations",
     ],
+    oldPrice: "$199",
+    newPrice: "$99",
+    badgeText: "9 seats remaining",
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout/buy/1869026f-194e-4805-89b3-ded98fa974d6?embed=1",
     moreDetails: "/nextjs-boilerplate-for-saas",
+  },
+  {
+    Icon: TbBrandNextjs,
+    id: "nextjs-ai",
+    title: "NextJs AI",
+    description:
+      "NextJs SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
+    features: [
+      "User Auth (Social Login, Magic Link)",
+      "LangChain Integration",
+      "Pinecone Integration",
+      "OpenAI Integration",
+      "PDF Chat",
+      "Database (MongoDb)",
+      "Landing Page",
+      "Email Integration",
+      "Stripe Checkout",
+      "Strip Webhook",
+      "LemonSqueezy Checkout",
+      "LemonSqueezy Webhook",
+      "LemonSqueezy Subscription",
+      "Customer Support (Crisp)",
+      "Custom SEO Configurations",
+    ],
+    oldPrice: "$199",
+    newPrice: "$99",
+    badgeText: "15 seats remaining",
+    paymentProvider: "LemonSqueezy",
+    buyLink:
+      "https://xpage.lemonsqueezy.com/checkout/buy/9731e04b-68cc-4ec7-9cda-6043e649a5f3?embed=1",
+    moreDetails: "/nextjs-ai-boilerplate-for-saas",
   },
   {
     Icon: TbBrandReact,

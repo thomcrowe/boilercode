@@ -29,15 +29,15 @@ export default function Card({ data }) {
           </ul>
         </div>
         <div className="p-8 space-y-4">
-          {data.title == "NextJs" ? (
+          {data.id == "nextjs" || data.id == "nextjs-ai" ? (
             <>
               <p className="flex items-center space-x-2">
-                <span className="line-through text-xl">$199</span>
+                <span className="line-through text-xl">{data.oldPrice}</span>
                 <span className="text-4xl ml-2 text-slate-900 font-bold">
-                  $99
+                  {data.newPrice}
                 </span>
                 <span className="bg-orange-700 px-3 py-1 rounded-3xl text-xs text-white font-bold">
-                  9 seats remaining
+                  {data.badgeText}
                 </span>
               </p>
 

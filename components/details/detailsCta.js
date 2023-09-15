@@ -1,8 +1,9 @@
 import { React, useEffect, useState } from "react";
 import LandingContainer from "../landingPage/landingContainer";
 import Button from "../elements/button";
+import features from "@/config/feature";
 
-export default function DetailsCta() {
+export default function DetailsCta({ id, subtitle }) {
   return (
     <div className="relative py-4 overflow-hidden">
       <div
@@ -17,22 +18,32 @@ export default function DetailsCta() {
                 Ship Faster than Flash
               </h1>
               <p className="text-center text-sm sm:text-base md:text-xl text-gray-600 dark:text-gray-300">
-                Get NextJs SaaS Boilerplate now
+                {subtitle}
               </p>
 
-              <p className="flex justify-center">
-                <span className="line-through text-xl">$199</span>
-                <span className="text-5xl ml-2 text-slate-900 font-bold">
-                  $99
-                </span>
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-                <Button
-                  link="https://xpage.lemonsqueezy.com/checkout/buy/1869026f-194e-4805-89b3-ded98fa974d6?embed=1"
-                  text="Get it Now"
-                  type="primary"
-                />
-              </div>
+              {features.map((feature, index) => (
+                <>
+                  {feature.id == id ? (
+                    <>
+                      <p className="flex justify-center">
+                        <span className="line-through text-xl">
+                          {feature.oldPrice}
+                        </span>
+                        <span className="text-5xl ml-2 text-slate-900 font-bold">
+                          {feature.newPrice}
+                        </span>
+                      </p>
+                      <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+                        <Button
+                          link={feature.buyLink}
+                          text="Get it Now"
+                          type="primary"
+                        />
+                      </div>
+                    </>
+                  ) : null}
+                </>
+              ))}
             </div>
           </div>
         </div>

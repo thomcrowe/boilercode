@@ -3,7 +3,7 @@ import Card from "../elements/card";
 import Sprikle from "../elements/sprikle";
 import features from "@/config/feature";
 
-const DetailsFeature = () => {
+const DetailsFeature = ({ id }) => {
   return (
     <>
       <div className="relative" id="features">
@@ -29,8 +29,8 @@ const DetailsFeature = () => {
           >
             {features.map((feature, index) => (
               <>
-                {feature.title == "NextJs" ? (
-                  <Card data={feature} key={index} />
+                {feature.id == id ? (
+                  <Card data={feature} key={"details_" + index} />
                 ) : null}
               </>
             ))}

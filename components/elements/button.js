@@ -8,11 +8,12 @@ export default function Button({ link, text, type = "default" }) {
     buttonColor = "before:bg-gray-500";
     textColor = "text-white";
   }
+
   return (
     <>
       <a
         href={link}
-        className={`relative flex h-9 w-full items-center justify-center px-4 before:absolute 
+        className={`relative flex h-9 w-full items-center justify-center px-8 before:absolute 
                               before:inset-0 before:rounded-full ${buttonColor} before:transition before:duration-300 
                               hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max`}
       >
