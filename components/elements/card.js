@@ -32,7 +32,7 @@ export default function Card({ data }) {
           {data.title == "NextJs" ? (
             <>
               <p className="flex items-center space-x-2">
-                <span className="line-through text-xl">$198</span>
+                <span className="line-through text-xl">$199</span>
                 <span className="text-4xl ml-2 text-slate-900 font-bold">
                   $99
                 </span>
@@ -58,7 +58,7 @@ export default function Card({ data }) {
           ) : (
             <>
               <p>
-                <span className="line-through text-xl">$198</span>
+                <span className="line-through text-xl">$199</span>
                 <span className="text-4xl ml-2 text-slate-900 font-bold">
                   $99
                 </span>

@@ -21,11 +21,10 @@ export default function DetailsCta() {
               </p>
 
               <p className="flex justify-center">
-                <span className="line-through text-xl">$99</span>
+                <span className="line-through text-xl">$199</span>
                 <span className="text-5xl ml-2 text-slate-900 font-bold">
-                  $49
+                  $99
                 </span>
-                <span className="text-lgl ml-2">USD</span>
               </p>
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
                 <Button
