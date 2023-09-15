@@ -43,7 +43,7 @@ export default function LandingHero() {
               </h1>
 
               <p className="mt-8 text-gray-700 dark:text-gray-300 text-3xl">
-                Ship Faster than Flash
+                Ship your <span className="font-bold text-primary underline">SaaS</span> Super Fast
               </p>
               <div className="mt-12 flex flex-wrap justify-center gap-y-4 gap-x-4">
                 <>
@@ -74,11 +74,10 @@ export default function LandingHero() {
                 </div>
                 <div className="text-center flex-1">
                   <h6 className="text-lg font-semibold text-gray-700 dark:text-white">
-                    Config First
+                    SEO First
                   </h6>
                   <p className="mt-2 text-gray-500">
-                    Most things in boilerplates can be modified by just changing
-                    config file.
+                    Manage your SEO super easy by a config file
                   </p>
                 </div>
               </div>

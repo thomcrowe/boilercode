@@ -17,6 +17,7 @@ const SEO = ({ title, description, image }) => {
         itemProp="description"
         content={description || defaultDescription}
       />
+      <link rel="icon" type="image/x-icon" href="/icon-512.png"></link>
       {/* <meta itemProp="image" content={defaultImageLink || image} /> */}
 
       <meta property="og:url" content={url} />
