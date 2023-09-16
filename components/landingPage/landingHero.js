@@ -53,6 +53,7 @@ export default function LandingHero() {
                   text="Explore Boilerplates"
                   type="primary"
                 />
+                <Button link="/blog/nextjs-saas" text="View Documentation" />
               </div>
               <div className="py-8 mt-16 border-y border-gray-800 sm:flex flex-col sm:flex-row justify-between items-center">
                 <div className="text-center flex-1 mb-4 sm:mb-0">

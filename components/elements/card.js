@@ -23,7 +23,10 @@ export default function Card({ data }) {
             {data.features.map((feature, index) => (
               <li key={index} className="flex items-center">
                 <FaCheck className="mr-2 text-green-900" />
-                {feature}
+                {feature.text}{" "}
+                <span className="ml-2 text-xs text-primary font-bold">
+                  {feature.hours}
+                </span>
               </li>
             ))}
           </ul>
@@ -49,8 +52,13 @@ export default function Card({ data }) {
                   customClass="lemonsqueezy-button"
                 />
                 <Button
-                  link={data.moreDetails}
-                  text="More details"
+                  link={data.demoPageLink}
+                  text="View Demo Videos"
+                  customClass="lemonsqueezy-button"
+                />
+                <Button
+                  link={data.guidePageLink}
+                  text="View Documentation"
                   customClass="lemonsqueezy-button"
                 />
               </div>

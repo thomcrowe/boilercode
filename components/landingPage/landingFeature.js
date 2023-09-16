@@ -28,7 +28,8 @@ const LandingFeature = () => {
           </div>
           <div
             className="mt-16 grid overflow-hidden rounded-3xl divide-x divide-y divide-gray-100 dark:divide-gray-700
-       border text-gray-600 border-gray-100 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-2  xl:grid-cols-2"
+       border text-gray-600 border-gray-100 dark:border-gray-700 
+       sm:grid-cols-1 lg:grid-cols-1  xl:grid-cols-1"
           >
             {features.map((feature, index) => (
               <div className="" key={"feature_" + index}>
