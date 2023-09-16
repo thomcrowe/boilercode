@@ -11,7 +11,7 @@ export default function LandingStory() {
       ></div>
       <LandingContainer>
         <div className="relative">
-          <div className="flex items-center justify-center h-[40vh] px-2 sm:px-0">
+          <div className="flex items-center justify-center px-2 sm:px-0">
             <div className="mt-6 m-auto space-y-6 w-full sm:w-8/12 md:w-7/12">
               <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-gray-700 dark:text-white">
                 My Story
