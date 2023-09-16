@@ -1,5 +1,5 @@
 import Button from "./button";
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaTimes } from "react-icons/fa";
 
 export default function Card({ data }) {
   return (
@@ -21,8 +21,17 @@ export default function Card({ data }) {
           <hr className="w-1/3" />
           <ul className="list-none list-inside mb-6 text-left">
             {data.features.map((feature, index) => (
-              <li key={index} className="flex items-center">
-                <FaCheck className="mr-2 text-green-900" />
+              <li
+                key={index}
+                className={`flex items-center ${
+                  feature.crossText ? "line-through" : ""
+                }`}
+              >
+                {feature.crossText ? (
+                  <FaTimes className="mr-2 text-red-900" />
+                ) : (
+                  <FaCheck className="mr-2 text-green-900" />
+                )}
                 {feature.text}{" "}
                 <span className="ml-2 text-xs text-primary font-bold">
                   {feature.hours}
@@ -32,7 +41,9 @@ export default function Card({ data }) {
           </ul>
         </div>
         <div className="p-8 space-y-4">
-          {data.id == "nextjs" || data.id == "nextjs-ai" ? (
+          {data.id == "nextjs" ||
+          data.id == "nextjs-ai" ||
+          data.id == "nextjs-free" ? (
             <>
               <p className="flex items-center space-x-2">
                 <span className="line-through text-xl">{data.oldPrice}</span>

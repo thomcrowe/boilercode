@@ -14,7 +14,7 @@ const features = [
       "NextJs SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
     features: [
       { text: "User Auth (Social Login, Magic Link)", hours: "+ Saving 5 hrs" },
-      { text: "Database (MongoDb)", hours: "+ Saving 4 hrs" },
+      { text: "Database Integration", hours: "+ Saving 4 hrs" },
       { text: "Landing Page", hours: "+ Saving 8 hrs" },
       { text: "Email Integration", hours: "+ Saving 3 hrs" },
       { text: "Stripe Checkout", hours: "+ Saving 3 hrs" },
@@ -47,7 +47,7 @@ const features = [
       { text: "Pinecone Integration", hours: "+ Saving 4 hrs" },
       { text: "OpenAI Integration", hours: "+ Saving 4 hrs" },
       { text: "PDF Chat", hours: "+ Saving 5 hrs" },
-      { text: "Database (MongoDb)", hours: "+ Saving 4 hrs" },
+      { text: "Database Integration", hours: "+ Saving 4 hrs" },
       { text: "Landing Page", hours: "+ Saving 8 hrs" },
       { text: "Email Integration", hours: "+ Saving 3 hrs" },
       { text: "Stripe Checkout", hours: "+ Saving 3 hrs" },
@@ -67,6 +67,50 @@ const features = [
       "https://xpage.lemonsqueezy.com/checkout/buy/9731e04b-68cc-4ec7-9cda-6043e649a5f3?embed=1",
     demoPageLink: "/nextjs-ai-boilerplate-for-saas",
     guidePageLink: "/blog/nextjs-ai",
+  },
+  {
+    Icon: TbBrandNextjs,
+    id: "nextjs-free",
+    title: "NextJs SaaS - Free",
+    description:
+      "NextJs SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
+    features: [
+      {
+        text: "User Auth (Social Login, Magic Link)",
+        hours: "+ Saving 5 hrs",
+      },
+      { text: "Database Integration", hours: "+ Saving 4 hrs" },
+      { text: "Landing Page", hours: "+ Saving 8 hrs" },
+      { text: "Email Integration", hours: "+ Saving 3 hrs" },
+      { text: "Stripe Checkout", hours: "+ Saving 3 hrs", crossText: true },
+      { text: "Strip Webhook", hours: "+ Saving 3 hrs", crossText: true },
+      { text: "LemonSqueezy Checkout", hours: "+ Saving 3 hrs" },
+      {
+        text: "LemonSqueezy Webhook",
+        hours: "+ Saving 3 hrs",
+        crossText: true,
+      },
+      {
+        text: "LemonSqueezy Subscription",
+        hours: "+ Saving 4 hrs",
+        crossText: true,
+      },
+      { text: "Customer Support (Crisp)", hours: "+ Saving 3 hrs" },
+      { text: "Custom SEO Configurations", hours: "+ Saving 4 hrs" },
+      {
+        text: "Custom Blog Integration",
+        hours: "+ Saving 10 hrs",
+        crossText: true,
+      },
+    ],
+    oldPrice: "$199",
+    newPrice: "$0",
+    badgeText: "Pay what you want",
+    paymentProvider: "LemonSqueezy",
+    buyLink:
+      "https://xpage.lemonsqueezy.com/checkout/buy/376cc037-396f-4a5b-9fea-05fc2c146c77?embed=1",
+    demoPageLink: "/nextjs-boilerplate-for-saas-free",
+    guidePageLink: "/blog/nextjs-saas-free-boilerplate",
   },
   {
     Icon: TbBrandReact,
