@@ -1,0 +1,66 @@
+---
+title: How to use Database in NextJs Application
+date: "2023-09-17"
+description: Learn how to use a database in your Next.js application. Get tips on setting up and connecting to a database, and learn best practices for using databases in Next.js.
+---
+        # How to use Database in NextJs Application
+
+![Database in NextJs Application](https://images.unsplash.com/photo-1594997064882-16446ba7d8e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDMzNDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTQ5NzAzMzd8&ixlib=rb-4.0.3&q=80&w=1080)
+
+Next.js is a powerful and popular React framework that makes it easier to build and deploy web applications. It simplifies routing, server-side rendering, and more. One of the key features of Next.js is its ability to read and write data from a database.
+
+In this tutorial, we’ll show you how to use a database with Next.js. We’ll cover the basics of setting up a database connection and querying data, as well as how to use the Next.js data fetching methods.
+
+## Setting up a Database Connection
+
+The first step in using a database with Next.js is to set up a database connection. This involves creating a configuration file that contains the necessary connection information.
+
+The configuration file should include the database type, hostname, port, username, and password. For example, if you’re using a MySQL database, your configuration might look like this:
+
+```
+const databaseConfig = {
+    type: 'mysql',
+    host: 'localhost',
+    port: 3306,
+    username: 'myusername',
+    password: 'mypassword'
+}
+```
+
+Once you’ve created the configuration file, you can use it to connect to the database. You can do this by using a database library such as [Sequelize](https://sequelize.org/).
+
+## Querying Data
+
+Once you’ve connected to the database, you can start querying data. The most common way to query data is to use an SQL query. For example, if you want to query a table called `users`, you could use the following SQL query:
+
+```
+SELECT * FROM users
+```
+
+This query will return all the data from the `users` table. You can use the returned data however you need in your application.
+
+## Using Next.js Data Fetching Methods
+
+Next.js provides several data fetching methods that you can use to query your database. You can use the `getStaticProps` and `getServerSideProps` methods to query your database on the server-side. You can use the `getStaticPaths` method to query your database for dynamic routes.
+
+For example, if you wanted to query the `users` table on the server-side, you could use the `getStaticProps` method like this:
+
+```
+export async function getStaticProps() {
+    // Query database
+    const users = await db.query('SELECT * FROM users');
+    
+    // Return data as props
+    return {
+        props: {
+            users
+        }
+    }
+}
+```
+
+This example will query the `users` table and return the data as a prop. You can then use the data in your application.
+
+## Conclusion
+
+In this tutorial, we’ve shown you how to use a database with Next.js. We’ve covered the basics of setting up a database connection and querying data, as well as how to use the Next.js data fetching methods. With this knowledge, you should be able to use a database with Next.js in your own applications.

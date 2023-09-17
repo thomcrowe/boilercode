@@ -1,0 +1,59 @@
+---
+title: How to start with NextJs as a beginner
+date: "2023-09-17"
+description: Start your NextJs journey today! Learn the basics of NextJs and create your first project as a beginner.
+---
+        # How to Start With Next.js as a Beginner 
+
+![alt text](https://images.unsplash.com/photo-1676282824476-ed6148e7c28a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDMzNDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTQ5NzAzNzN8&ixlib=rb-4.0.3&q=80&w=1080)
+
+Next.js is an open-source React framework used to build production-ready React applications. It simplifies the development process and makes it easier to build React applications quickly. In this tutorial, we will be exploring how to get started with Next.js as a beginner. 
+
+## Prerequisites 
+
+Before you can begin working with Next.js, you'll need to have Node.js and npm installed. If you don't already have them installed, you can find instructions for how to do so [here](https://nodejs.org/en/download/). 
+
+## Creating a Project with Next.js 
+
+To get started, you'll need to create a new project with Next.js. We can do this by running the following command in the terminal: 
+
+```bash
+npx create-next-app <project-name>
+```
+
+Where `<project-name>` is the name of the project you'd like to create. This will create a new project with the given name and install all the necessary dependencies. 
+
+## Adding Pages 
+
+Next.js allows you to easily add pages to your application. To do this, create a new file in the `pages` directory. This file should be named after the URL you want the page to be served at. For example, if you wanted to create a page at `/about`, you would create a file named `about.js`. 
+
+This file should contain a React component that will be rendered when the page is visited. For example: 
+
+```jsx
+function About() {
+  return (
+    <div>
+      <h1>About</h1>
+      <p>This is the about page.</p>
+    </div>
+  );
+}
+
+export default About;
+```
+
+The page is now ready to be served when the URL `/about` is visited. 
+
+## Serving the Application 
+
+Once you have your pages set up, you can start the development server with the following command: 
+
+```bash
+npm run dev
+```
+
+This will start the development server and serve your application. You can now visit `http://localhost:3000` to view your application in the browser. 
+
+## Conclusion 
+
+In this tutorial, we explored how to get started with Next.js as a beginner. We looked at how to create a project, add pages, and serve the application. For more information, check out the official documentation [here](https://nextjs.org/docs/getting-started).
