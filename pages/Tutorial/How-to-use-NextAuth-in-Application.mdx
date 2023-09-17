@@ -1,0 +1,87 @@
+---
+title: How to use NextAuth in Application
+date: "2023-09-17"
+description: Learn how to use NextAuth to easily add authentication to your application. Quickly set up authentication with just a few lines of code.
+---
+        # How to use NextAuth in Application
+
+In this tutorial, we will walkthrough how to use [NextAuth](https://next-auth.js.org/) in your application. NextAuth is an authentication library for [Next.js](https://nextjs.org/).
+
+## Prerequisites
+
+To complete this tutorial, you’ll need the following:
+
+* An understanding of JavaScript
+* Familiarity with [React](https://reactjs.org/) and [Next.js](https://nextjs.org/)
+* Access to a terminal and a text editor
+
+## Getting Started
+
+First, you’ll need to install the `next-auth` package. To do this, run the following command in your terminal:
+
+```
+npm install next-auth
+```
+
+Next, you’ll need to create a `pages/api/auth/[...nextauth].js` file. This is where you’ll define the configuration for your authentication.
+
+```js
+import { NextAuth } from "next-auth";
+import Providers from "next-auth/providers";
+
+const options = {
+  site: process.env.SITE || "http://localhost:3000",
+  providers: [
+    Providers.Google({
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
+    }),
+  ],
+};
+
+export default (req, res) => NextAuth(req, res, options);
+```
+
+Now, you’ll need to create a `pages/index.js` file. This is where you’ll define the user interface for your application.
+
+```js
+import { useSession } from "next-auth/client";
+
+export default function Home() {
+  const [session, loading] = useSession();
+
+  return (
+    <div>
+      {loading && <p>Loading...</p>}
+      {!loading && !session && (
+        <>
+          <p>You are not signed in.</p>
+          <a href="/api/auth/signin">Sign in</a>
+        </>
+      )}
+      {!loading && session && (
+        <>
+          <p>You are signed in.</p>
+          <a href="/api/auth/signout">Sign out</a>
+        </>
+      )}
+    </div>
+  );
+}
+```
+
+Finally, you’ll need to start the server. To do this, run the following command in your terminal:
+
+```
+npm run dev
+```
+
+## Summary
+
+In this tutorial, you learned how to use NextAuth in your application. You set up the authentication configuration in the `pages/api/auth/[...nextauth].js` file, and you created the user interface in the `pages/index.js` file. You also learned how to start the server.
+
+If you’d like to learn more about NextAuth, you can check out the [official documentation](https://next-auth.js.org/).
+
+## Get NextJs SaaS Boilerplate
+
+[Get NextJs SaaS Boilerplate](https://boilercode.co)

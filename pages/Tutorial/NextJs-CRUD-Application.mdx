@@ -1,0 +1,136 @@
+---
+title: NextJs CRUD Application
+date: "2023-09-17"
+description: Create a modern web application with Next.js build a CRUD app quickly and easily.
+---
+        # NextJs CRUD Application
+
+![Cover Image](https://images.unsplash.com/photo-1617471346061-5d329ab9c574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDMzNDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTQ5Njc0MDJ8&ixlib=rb-4.0.3&q=80&w=1080)
+
+## Introduction
+
+CRUD (Create, Read, Update, Delete) applications are the backbone of modern web development. With Next.js, you can quickly and easily build powerful CRUD applications with minimal effort. In this tutorial, we will walk through the steps of creating a simple CRUD application using Next.js.
+
+## Prerequisites
+
+Before getting started, you will need to have basic knowledge of HTML, CSS, and JavaScript. You will also need to have Node.js and npm installed on your computer.
+
+## Getting Started
+
+To get started, create a new Next.js project using the command `npx create-next-app`. This will create a new directory with all the necessary files and dependencies for your application.
+
+Now open your project in your favorite text editor and create a new file called `index.js`. This will be the entry point for your application.
+
+## Building a Model
+
+The first step is to create a model for your application. This will represent the data that will be stored in your application. For this example, we will create a simple model with an `id`, `name`, and `email` field.
+
+```javascript
+const model = {
+  id: String,
+  name: String,
+  email: String
+}
+```
+
+## Setting up Routes
+
+Next, we will need to setup the routes for our application. We will create two routes, one for creating a new user and one for retrieving an existing user.
+
+First, we will create an `api` folder in the `pages` directory. Inside of this folder, create two new files, `create.js` and `retrieve.js`.
+
+The `create.js` file will be responsible for creating a new user.
+
+```javascript
+import { model } from '../models';
+
+export default (req, res) => {
+  const { name, email } = req.body;
+
+  const newUser = {
+    id: Date.now(),
+    name,
+    email
+  };
+
+  // Insert the new user into the database
+
+  res.status(201).json(newUser);
+};
+```
+
+The `retrieve.js` file will be responsible for retrieving an existing user.
+
+```javascript
+import { model } from '../models';
+
+export default (req, res) => {
+  const { id } = req.params;
+
+  // Retrieve the user from the database
+
+  res.status(200).json(user);
+};
+```
+
+## Creating the UI
+
+Now we need to create the UI for our application. We will create a simple form for creating a new user, and a table for displaying existing users.
+
+Create a new file, `index.js`, in the `pages` directory. This will be the main page for our application.
+
+```javascript
+import React from 'react';
+
+const Home = () => (
+  <div>
+    <h1>CRUD Application</h1>
+    <form>
+      {/* Form for creating a new user */}
+    </form>
+    <table>
+      {/* Table for displaying existing users */}
+    </table>
+  </div>
+);
+
+export default Home;
+```
+
+## Adding Data
+
+Finally, we need to add the data to our application. We will use the `useState` hook to store our data in the component.
+
+```javascript
+import React, { useState } from 'react';
+
+const Home = () => {
+  const [users, setUsers] = useState([]);
+
+  // Add code for submitting the form and retrieving users
+
+  return (
+    <div>
+      <h1>CRUD Application</h1>
+      <form>
+        {/* Form for creating a new user */}
+      </form>
+      <table>
+        {/* Table for displaying existing users */}
+      </table>
+    </div>
+  );
+};
+
+export default Home;
+```
+
+## Conclusion
+
+In this tutorial, we have walked through the steps of creating a simple CRUD application using Next.js. We have setup the routes, created the model, built the UI, and added the data to our application. With Next.js, you can quickly and easily build powerful CRUD applications with minimal effort.
+
+For more information on Next.js, please visit the [official documentation](https://nextjs.org/docs).
+
+## Get NextJs SaaS Boilerplate
+
+[Get NextJs SaaS Boilerplate](https://boilercode.co)
