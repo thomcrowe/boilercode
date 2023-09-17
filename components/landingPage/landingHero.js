@@ -2,9 +2,21 @@ import LandingContainer from "./landingContainer";
 import { React, useEffect, useState } from "react";
 import ProductHunt from "../elements/productHunt";
 import Button from "../elements/button";
+import {
+  TbBrandNextjs,
+  TbBrandPaypalFilled,
+  TbBrandReact,
+  TbBrandChrome,
+  TbBrandMailgun,
+  TbDatabase,
+  TbBrandTailwind,
+  TbBrandOpenai,
+  TbBrandOauth,
+} from "react-icons/tb";
+import { FaStripe } from "react-icons/fa";
 
 export default function LandingHero() {
-  const words = ["NextJs", "React", "React Native", "Chrome Extension"];
+  const words = ["NextJs SaaS", "NextJs AI"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentTyping, setCurrentTyping] = useState("");
   const [charIndex, setCharIndex] = useState(0);
@@ -61,8 +73,9 @@ export default function LandingHero() {
                     User Auth
                   </h6>
                   <p className="mt-2 text-gray-500">
-                    User Auth including Login with Social Website, Login with
-                    Magic Link
+                    User Auth including{" "}
+                    <span className="text-primary">Social Login</span> and{" "}
+                    <span className="text-primary">Magic Link Login</span>
                   </p>
                 </div>
                 <div className="text-center flex-1 mb-4 sm:mb-0">
@@ -70,7 +83,10 @@ export default function LandingHero() {
                     Payments
                   </h6>
                   <p className="mt-2 text-gray-500">
-                    Support Integration with Stripe and LemonSqueezy dynamically
+                    Support Integration with{" "}
+                    <span className="text-primary">Stripe</span> and{" "}
+                    <span className="text-primary">LemonSqueezy</span>{" "}
+                    dynamically
                   </p>
                 </div>
                 <div className="text-center flex-1">
@@ -80,6 +96,64 @@ export default function LandingHero() {
                   <p className="mt-2 text-gray-500">
                     Manage your SEO super easy by a config file
                   </p>
+                </div>
+              </div>
+              <div className="mt-12 flex flex-wrap justify-center gap-x-4">
+                <div className="p-4 transition duration-200 flex flex-col items-center">
+                  <TbBrandNextjs
+                    size={40}
+                    className="text-gray-800 dark:text-white mb-2"
+                  />
+                  <p className="text-gray-700 text-sm">NextJs</p>
+                </div>
+                <div className="p-4 transition duration-200 flex flex-col items-center">
+                  <TbBrandOauth
+                    size={40}
+                    className="text-gray-800 dark:text-white mb-2"
+                  />
+                  <p className="text-gray-700 text-sm">User Auth</p>
+                </div>
+                <div className="p-4 transition duration-200 flex flex-col items-center">
+                  <FaStripe
+                    size={40}
+                    className="text-gray-800 dark:text-white mb-2"
+                  />
+                  <p className="text-gray-700 text-sm">Payments</p>
+                </div>
+                <div className="p-4 transition duration-200 flex flex-col items-center">
+                  <TbBrandPaypalFilled
+                    size={40}
+                    className="text-gray-800 dark:text-white mb-2"
+                  />
+                  <p className="text-gray-700 text-sm">Paypal</p>
+                </div>
+                <div className="p-4 transition duration-200 flex flex-col items-center">
+                  <TbBrandMailgun
+                    size={40}
+                    className="text-gray-800 dark:text-white mb-2"
+                  />
+                  <p className="text-gray-700 text-sm">Emails</p>
+                </div>
+                <div className="p-4 transition duration-200 flex flex-col items-center">
+                  <TbDatabase
+                    size={40}
+                    className="text-gray-800 dark:text-white mb-2"
+                  />
+                  <p className="text-gray-700 text-sm">Database</p>
+                </div>
+                <div className="p-4 transition duration-200 flex flex-col items-center">
+                  <TbBrandTailwind
+                    size={40}
+                    className="text-gray-800 dark:text-white mb-2"
+                  />
+                  <p className="text-gray-700 text-sm">Tailwind</p>
+                </div>
+                <div className="p-4 transition duration-200 flex flex-col items-center">
+                  <TbBrandOpenai
+                    size={40}
+                    className="text-gray-800 dark:text-white mb-2"
+                  />
+                  <p className="text-gray-700 text-sm">AI</p>
                 </div>
               </div>
             </div>
