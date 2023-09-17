@@ -55,7 +55,7 @@ export default function Card({ data }) {
                 </span>
               </p>
 
-              <div className="flex space-x-2">
+              <div className="flex flex-wrap justify-center gap-y-4 gap-x-4">
                 <Button
                   link={data.buyLink}
                   text="Get it now"
