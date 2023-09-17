@@ -14,17 +14,18 @@ export default function LandingCta() {
           <div className="flex items-center justify-center h-[50vh] px-2 sm:px-0">
             <div className="mt-6 m-auto space-y-6 w-full sm:w-8/12 md:w-7/12">
               <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-gray-700 dark:text-white">
-                Ship Faster than Flash
+                Want to build Custom Software?
               </h1>
               <p className="text-center text-sm sm:text-base md:text-xl text-gray-600 dark:text-gray-300">
-                Just clone and run
+                Launch your Product in 15 days
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
                 <Button
-                  link="#features"
-                  text="Explore Boilerplates"
+                  link="https://uniqueside.io/?utm_source=boilercode"
+                  text="Launch your MVP"
                   type="primary"
+                  newTab={true}
                 />
               </div>
             </div>
