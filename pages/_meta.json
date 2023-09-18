@@ -7,13 +7,12 @@
     "title": "How to Guide",
     "href": "/blog/nextjs-saas"
   },
-  "": "",
   "-- Tutorials": {
     "type": "separator",
     "title": "Programming Tutorials"
   },
-  "tutorial": {
+  "tutorials": {
     "title": "Tutorials",
-    "href": "/tutorial/NextJs-CRUD-Application"
+    "href": "/tutorials/NextJs-CRUD-Application"
   }
 }
