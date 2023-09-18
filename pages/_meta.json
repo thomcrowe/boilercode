@@ -1,0 +1,19 @@
+{
+  "-- Boilerplate": {
+    "type": "separator",
+    "title": "Boilerplate Guide"
+  },
+  "blog": {
+    "title": "How to Guide",
+    "href": "/blog/nextjs-saas"
+  },
+  "": "",
+  "-- Tutorials": {
+    "type": "separator",
+    "title": "Programming Tutorials"
+  },
+  "tutorial": {
+    "title": "Tutorials",
+    "href": "/tutorial/NextJs-CRUD-Application"
+  }
+}
