@@ -1,0 +1,97 @@
+---
+title: Next.js and GraphQL - Building Modern APIs for Your App
+date: "2023-09-18"
+description: Build modern APIs for your app with Next.js and GraphQL. Learn how to create powerful, efficient, and secure web applications.
+---
+        # Next.js and GraphQL: Building Modern APIs for Your App
+
+![GraphQL and Next.js](https://images.unsplash.com/photo-1510445740272-d3b16ec28439?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDMzNDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTUwNTYwMzV8&ixlib=rb-4.0.3&q=80&w=1080)
+
+In this article, we'll explore how to use Next.js and GraphQL to build modern APIs for your app. GraphQL is a powerful query language that enables developers to query and mutate data from a backend server. On the other hand, Next.js is a JavaScript framework that makes it easy to build server-side rendered React applications. Combining these two popular technologies can help you create a powerful API to serve your app's needs.
+
+## Getting Started
+
+Before you can begin building your API, you'll need to install the necessary dependencies. To install the latest version of Next.js, use the following command:
+
+```
+npm install next
+```
+
+You'll also need to install the GraphQL and apollo-server packages. To do this, use the following commands:
+
+```
+npm install graphql
+npm install apollo-server
+```
+
+Once you've installed the necessary dependencies, you can start creating your API.
+
+## Creating Your API
+
+Now that you've installed the necessary dependencies, you can start creating your API. To do this, you'll need to create a GraphQL schema file. This file will define the various types of data that your API will support. Here's an example of a simple GraphQL schema:
+
+```
+type User {
+  id: ID!
+  name: String
+  email: String
+}
+
+type Query {
+  users: [User]
+}
+
+type Mutation {
+  addUser(name: String, email: String): User
+}
+```
+
+This simple GraphQL schema defines a `User` type and two queries: `users` and `addUser`. The `users` query will return an array of `User` objects and the `addUser` mutation will add a new user to the database.
+
+Once you've created your GraphQL schema, you can create your API endpoint using the Apollo Server library. Here's an example of how you can use Apollo Server to create an API endpoint:
+
+```
+const { ApolloServer } = require('apollo-server');
+const typeDefs = require('./schema.graphql');
+const resolvers = require('./resolvers')
+
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+});
+
+server.listen().then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`);
+});
+```
+
+This code creates an Apollo Server instance and passes it the GraphQL schema and resolvers. The `listen` method starts the server and returns the URL that you can use to access the API.
+
+## Using the API
+
+Now that you've created your API, you can start using it in your Next.js application. To do this, you'll need to install the `apollo-client` package. This package will enable you to make GraphQL queries and mutations from your Next.js app.
+
+Once you've installed the `apollo-client` package, you can start making requests to your API. Here's an example of how you can make a query to the `users` endpoint:
+
+```
+query {
+  users {
+    id
+    name
+    email
+  }
+}
+```
+
+This query will return an array of `User` objects. You can then use this data in your application to render a list of users.
+
+## Conclusion
+
+In this article, we explored how to use Next.js and GraphQL to build modern APIs for your app. We started by installing the necessary dependencies and creating a GraphQL schema. We then created an API endpoint using Apollo Server. Finally, we used the `apollo-client` package to make requests to the API from our Next.js app.
+
+By combining Next.js and GraphQL, you can quickly and easily create powerful APIs for your applications. This approach is ideal for applications that need to query and mutate data from a backend server.
+
+For more information about Next.js and GraphQL, see the official documentation:
+
+* [Next.js](https://nextjs.org/docs)
+* [GraphQL](https://graphql.org/learn)
