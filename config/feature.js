@@ -125,6 +125,39 @@ const features = [
     guidePageLink: "/blog/nextjs-saas-free-boilerplate",
   },
   {
+    Icon: TbBrandNextjs,
+    id: "nextjs-blog",
+    title: "NextJs Blog with Landing Page",
+    description:
+      "Get exact replica of Boilercode.co landing page with custom blog feature.",
+    features: [
+      { text: "Landing Page", hours: "+ Saving 8 hrs" },
+      {
+        text: "Custom Blog Integration",
+        hours: "+ Saving 10 hrs",
+      },
+      {
+        text: "LemonSqueezy Checkout (Including Paypal)",
+        hours: "+ Saving 3 hrs",
+      },
+      { text: "Tailwind CSS", hours: "+ Saving 3 hrs" },
+      { text: "Customer Support (Crisp)", hours: "+ Saving 3 hrs" },
+      { text: "Custom SEO Configurations", hours: "+ Saving 4 hrs" },
+      {
+        text: "Just put your blog file into a folder and your blog will be up and running",
+        hours: "+ Saving 4 hrs",
+      },
+    ],
+    oldPrice: "$199",
+    newPrice: "$49",
+    badgeText: "Limited time offer",
+    paymentProvider: "LemonSqueezy",
+    buyLink:
+      "https://xpage.lemonsqueezy.com/checkout/buy/a33bf353-23bf-46bd-b1ca-e83552db0140?embed=1",
+    demoPageLink: "/blog/nextjs-saas-free-boilerplate",
+    guidePageLink: "/blog/nextjs-ai#custom-blog",
+  },
+  {
     Icon: TbBrandReact,
     title: "React",
     description:

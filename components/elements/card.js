@@ -43,7 +43,8 @@ export default function Card({ data }) {
         <div className="p-8 space-y-4">
           {data.id == "nextjs" ||
           data.id == "nextjs-ai" ||
-          data.id == "nextjs-free" ? (
+          data.id == "nextjs-free" ||
+          data.id == "nextjs-blog" ? (
             <>
               <p className="flex items-center space-x-2">
                 <span className="line-through text-xl">{data.oldPrice}</span>
@@ -56,22 +57,30 @@ export default function Card({ data }) {
               </p>
 
               <div className="flex flex-wrap gap-y-4 gap-x-2">
-                <Button
-                  link={data.buyLink}
-                  text="Get it now"
-                  type="primary"
-                  customClass="lemonsqueezy-button"
-                />
-                <Button
-                  link={data.demoPageLink}
-                  text="View Demo Videos"
-                  customClass="lemonsqueezy-button"
-                />
-                <Button
-                  link={data.guidePageLink}
-                  text="View Documentation"
-                  customClass="lemonsqueezy-button"
-                />
+                {data.buyLink ? (
+                  <Button
+                    link={data.buyLink}
+                    text="Get it now"
+                    type="primary"
+                    customClass="lemonsqueezy-button"
+                  />
+                ) : null}
+
+                {data.demoPageLink ? (
+                  <Button
+                    link={data.demoPageLink}
+                    text="View Demo Videos"
+                    customClass="lemonsqueezy-button"
+                  />
+                ) : null}
+
+                {data.guidePageLink ? (
+                  <Button
+                    link={data.guidePageLink}
+                    text="View Documentation"
+                    customClass="lemonsqueezy-button"
+                  />
+                ) : null}
               </div>
             </>
           ) : (
