@@ -25,7 +25,7 @@ export default function NextJsHome() {
       <LandingLayout>
         <LandingHeader />
         <main className="space-y-20 mb-0">
-          <DetailsHero title="Free NextJs Boilerplate for SaaS" />
+          <DetailsHero title="Basic NextJs Boilerplate for SaaS" />
           <DetailsFeature id="nextjs-free" />
           <DetailsHowTo
             title="NextJs Boilerplace Demo"
