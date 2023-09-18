@@ -79,7 +79,7 @@ const features = [
   {
     Icon: TbBrandNextjs,
     id: "nextjs-free",
-    title: "NextJs SaaS - Free",
+    title: "NextJs SaaS - Basic",
     description:
       "NextJs SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
     features: [
@@ -116,8 +116,8 @@ const features = [
       },
     ],
     oldPrice: "$199",
-    newPrice: "$0",
-    badgeText: "Pay what you want",
+    newPrice: "$29",
+    badgeText: "Limited time offer",
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout/buy/376cc037-396f-4a5b-9fea-05fc2c146c77?embed=1",
