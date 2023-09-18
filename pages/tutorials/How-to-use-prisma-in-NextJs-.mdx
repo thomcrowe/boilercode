@@ -1,0 +1,87 @@
+---
+title: How to use prisma in NextJs 
+date: "2023-09-18"
+description: Learn how to use Prisma in Next.js to quickly and easily create powerful server-side applications. Get up and running in no time!
+---
+        # How to Use Prisma in Next.js
+
+## Introduction
+
+Next.js is a popular React framework that makes it easier to build complex applications. With its server-side rendering capabilities, you can build apps that are lightning fast and SEO friendly. You can also integrate different technologies to make them work with Next.js, such as GraphQL. Prisma is an open-source GraphQL database toolkit that makes it easier to work with databases in GraphQL. In this tutorial, we will learn how to use Prisma with Next.js.
+
+## Prerequisites
+
+Before we begin, make sure you have the following installed:
+
+- Node.js
+- Yarn
+- Prisma CLI
+- Docker
+
+## Step 1 - Create a Next.js Project
+
+The first step is to create a Next.js project. To do this, open a terminal window and run the following command:
+
+```shell
+yarn create next-app my-app
+```
+
+This will create a project in a new directory called `my-app`.
+
+## Step 2 - Set up Prisma
+
+The next step is to set up Prisma. To do this, run the following command in your terminal:
+
+```shell
+prisma init
+```
+
+This will create a new directory called `prisma` with the Prisma configuration files.
+
+## Step 3 - Connect Prisma to Your Database
+
+Now that you have the Prisma configuration files, you can connect it to your database. For this tutorial, we will use a Postgres database, but you can use any supported database.
+
+To connect your database, open the `prisma/prisma.yml` file and add the following code:
+
+```yml
+datasources:
+  db:
+    url: postgresql://username:password@host:port/database
+```
+
+Be sure to replace the `username`, `password`, `host`, `port`, and `database` with the correct values for your database.
+
+## Step 4 - Generate the Prisma Client
+
+Next, you need to generate the Prisma client. To do this, run the following command in your terminal:
+
+```shell
+prisma generate
+```
+
+This will generate the Prisma client in the `prisma/generated/prisma-client` directory.
+
+## Step 5 - Connect Prisma to Next.js
+
+Now that we have the Prisma client, we can connect it to our Next.js project. To do this, open the `my-app/pages/index.js` file and add the following code:
+
+```js
+import { PrismaClient } from '../prisma/generated/prisma-client';
+
+const IndexPage = () => {
+  const prisma = new PrismaClient();
+
+  return <div>Hello world!</div>;
+};
+
+export default IndexPage;
+```
+
+Now, you can use the `prisma` instance to make queries to your database in your Next.js application.
+
+## Conclusion
+
+In this tutorial, we learned how to use Prisma with Next.js. We started by creating a Next.js project and setting up Prisma. Then, we connected Prisma to our database and generated the Prisma client. Finally, we connected Prisma to Next.js and were able to make queries to our database in our application.
+
+For more information about using Prisma with Next.js, please refer to the [official documentation](https://www.prisma.io/docs/tutorials/get-started/nextjs).

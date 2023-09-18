@@ -1,0 +1,39 @@
+---
+title: How to render images in nextjs
+date: "2023-09-18"
+description: Learn how to render images in Next.js with this easy-to-follow guide. Get tips on optimizing images for the best performance.
+---
+        # How to render images in Next.js
+![cover image](https://images.unsplash.com/photo-1633544325196-bcf8bf81ead0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDMzNDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTUwNDc4MjZ8&ixlib=rb-4.0.3&q=80&w=1080)
+
+This tutorial is for beginners who are looking to learn how to render images in [Next.js](https://nextjs.org).
+
+## Prerequisites
+
+Before getting started, you should have some basic knowledge of HTML and CSS.
+
+## What is Next.js?
+
+Next.js is a React framework for building server-rendered and statically generated applications. It provides an easy to use environment for developing, testing, and deploying web applications.
+
+## How to render images in Next.js
+
+In order to render images in Next.js, you can use the built-in `<img>` tag. The `<img>` tag takes two attributes: `src` and `alt`. The `src` attribute should contain the path to the image you want to render, and the `alt` attribute should contain a short description of the image.
+
+```html
+<img src="/path/to/image.jpg" alt="Description of the image">
+```
+
+You can also use the `<Image>` component from the Next.js image library. This component takes the same attributes as the `<img>` tag, but also provides additional features such as lazy loading and image optimization.
+
+```jsx
+import { Image } from 'next/image'
+
+<Image src="/path/to/image.jpg" alt="Description of the image" />
+```
+
+For more information on how to use the `<Image>` component, please refer to the [Next.js Image documentation](https://nextjs.org/docs/basic-features/images).
+
+## Conclusion
+
+In this tutorial, we discussed how to render images in Next.js. We saw how to use the built-in `<img>` tag, as well as the `<Image>` component from the Next.js image library. With this knowledge, you should be able to easily add images to your Next.js applications.

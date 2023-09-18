@@ -1,0 +1,83 @@
+---
+title: How to use SEO in nextJs Application
+date: "2023-09-18"
+description: Learn how to optimize your Next.js application for search engines with SEO best practices. Get tips on how to use SEO to improve visibility and rankings.
+---
+        # How to Use SEO in Next.js Applications
+
+![Cover Photo of SEO in Next.js Application](https://images.unsplash.com/photo-1621771834698-67f46aa51da8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDMzNDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTUwNTE0MDN8&ixlib=rb-4.0.3&q=80&w=1080)
+
+Search engine optimization (SEO) is a key factor for ensuring that your applications get seen by users. With the Next.js framework, you can create SEO-friendly applications that make sure your applications get seen by the right people and rank highly in search engine results. Here, we’ll look at how to use SEO in Next.js applications. 
+
+## Why Use SEO in Next.js Applications?
+
+SEO helps to boost your application’s visibility and ensure that your website appears in front of the right people. When users type a query into a search engine, the results are ranked in order of relevance. If your application appears near the top of the search results, it’s more likely to be seen by users.
+
+SEO is also important for increasing your application’s traffic. When a user clicks on your application’s link, they’ll be directed to your website. This helps to increase the number of visitors to your application, which can result in increased profits.
+
+## Setting Up SEO for Next.js Applications
+
+Before you can start using SEO in your Next.js application, you need to set up the necessary components. 
+
+### Adding the `next-seo` Package
+
+The first step is to install the `next-seo` package. This package provides access to a range of SEO-related features, such as title tags, meta tags, and Open Graph tags. To install the package, simply run the following command: 
+
+```bash
+npm install next-seo
+```
+
+### Adding the `next-seo.config.js` File
+
+Next, you’ll need to create a `next-seo.config.js` file. This file contains the settings for your SEO configuration. To create the file, open your application’s root directory and create a new file with the following command: 
+
+```bash
+touch next-seo.config.js
+```
+
+In the file, you can add the settings for your SEO configuration. Here’s an example configuration: 
+
+```js
+module.exports = {
+  title: 'My Next.js Application',
+  description: 'This is my Next.js Application',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IE',
+    url: 'https://www.example.com',
+    site_name: 'My Next.js Application',
+  },
+}
+```
+
+### Adding SEO Headers
+
+Finally, you need to add the SEO headers to the `pages/_document.js` file. This file contains the HTML that will be served to the user. To add the SEO headers, open the file and add the following code: 
+
+```js
+import Document, { Head, Main, NextScript } from 'next/document'
+import { Fragment } from 'react'
+import { DefaultSeo } from 'next-seo'
+
+export default class MyDocument extends Document {
+  render() {
+    return (
+      <html lang="en">
+        <Head>
+          <DefaultSeo {...nextSEO.config} />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </html>
+    )
+  }
+}
+```
+
+## Conclusion
+
+SEO is a key factor for ensuring that your application is seen by the right people. With the Next.js framework, you can easily set up SEO-friendly applications. To set up SEO for your Next.js application, you need to install the `next-seo` package, create a `next-seo.config.js` file, and add the SEO headers to the `pages/_document.js` file. 
+
+Once you’ve set up SEO for your application, you can start optimizing your content to ensure that it ranks highly in search engine results. If you want to learn more about SEO and how to optimize your content, check out the [Google Search Console Help Center](https://support.google.com/webmasters/topic/6001886).

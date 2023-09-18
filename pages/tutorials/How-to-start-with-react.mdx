@@ -1,0 +1,85 @@
+---
+title: How to start with react
+date: "2023-09-18"
+description: Learn how to get started with React, the popular JavaScript library for building user interfaces. Get tips on setting up your development environment and creating your first React app.
+---
+        # How to Start with React
+
+![alt text](https://images.unsplash.com/photo-1529160104159-7a5937a4a0a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDMzNDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTUwNTEzNzV8&ixlib=rb-4.0.3&q=80&w=1080 "React Logo")
+
+React is a JavaScript library for building user interfaces. It is frequently used to create interactive single page applications. React has been around for a while, and now it is becoming the go-to solution for many web developers. If you have been wanting to learn React, then this is the perfect guide for you! 
+
+## Getting Started
+
+The first step is to install [Node.js](https://nodejs.org/en/). This will ensure that you have the necessary environment in which to run React. Once you have Node.js installed, you can use a package manager such as [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/) to install React.
+
+The simplest way to get started with React is to use [create-react-app](https://create-react-app.dev/). This is a command-line utility that will set up a basic React project for you with all of the necessary dependencies. All you have to do is run the command `create-react-app <project-name>` and you will have a basic React project ready to go.
+
+## Understanding React
+
+Once you have your project set up, you should familiarize yourself with the structure of React. React is composed of [components](https://reactjs.org/docs/react-component.html). Components are small, reusable pieces of code that can be composed together to create larger applications.
+
+React also utilizes a [virtual DOM](https://reactjs.org/docs/faq-internals.html#what-is-the-virtual-dom). The virtual DOM is a lightweight version of the DOM (Document Object Model). It is used to keep track of the state of the application and to update the DOM when the state changes.
+
+## Writing React Code
+
+Now that you are familiar with the structure of React, you can start writing your own React code. React code is written in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Typically, React code is written in a [JSX](https://reactjs.org/docs/introducing-jsx.html) syntax, which is a combination of JavaScript and HTML.
+
+Here is an example of a React component written in JSX:
+
+```javascript
+import React from 'react';
+
+const HelloWorld = () => {
+  return (
+    <div>
+      <h1>Hello World!</h1>
+    </div>
+  );
+};
+
+export default HelloWorld;
+```
+
+This simple component will render the text “Hello World” on the screen.
+
+## Managing State
+
+React components can manage their own state. State is a collection of data that can be used to update the UI of the component. State is typically managed using [React Hooks](https://reactjs.org/docs/hooks-intro.html). Hooks are a way to use state and other React features without writing a class.
+
+Here is an example of a component that uses a state hook:
+
+```javascript
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={handleClick}>Click Me!</button>
+    </div>
+  );
+};
+
+export default Counter;
+```
+
+This component will render a number on the screen and increment it every time the button is clicked.
+
+## Conclusion
+
+React is a powerful and popular JavaScript library for building user interfaces. It is composed of components, uses a virtual DOM, and can manage its own state. With this guide, you should be able to get started with React and start building your own React applications. Good luck!
+
+Official References:
+
+- [React Documentation](https://reactjs.org/)
+- [Create React App Documentation](https://create-react-app.dev/)
+- [Node.js Documentation](https://nodejs.org/en/)
+- [Yarn Documentation](https://yarnpkg.com/)
+- [NPM Documentation](https://www.npmjs.com/)

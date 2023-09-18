@@ -1,0 +1,81 @@
+---
+title: How to use Server side render in nextjs
+date: "2023-09-18"
+description: Learn how to use Server Side Rendering in Next.js for faster page loads and improved SEO.
+---
+        # How to use Server Side Rendering in Next.js
+
+![alt text](https://images.unsplash.com/photo-1635751589442-9e643734b2b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDMzNDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTUwNDc4MDZ8&ixlib=rb-4.0.3&q=80&w=1080 "Server Side Rendering in Next.js")
+
+Server side rendering (SSR) is an important concept in web development and is especially useful for Next.js applications. SSR allows webpages to be rendered on the server before being sent to the browser, which can help improve performance and create more engaging experiences. In this tutorial, we'll explain how to use server side rendering in Next.js. 
+
+## What is Server Side Rendering? 
+
+Server side rendering (SSR) is the process of rendering a webpage on the server before sending it to the user's browser. This process allows for faster page loading times and more engaging user experiences because the user can start interacting with the page before all of the content has loaded.
+
+## Why use Server Side Rendering? 
+
+Server side rendering can be beneficial for a number of reasons. For one, it reduces the amount of time it takes for a page to load, which can help improve user experience. Additionally, SSR can help increase the SEO rankings of a page because search engines are able to index the content of the page faster. Finally, SSR can help improve security as the server is able to filter malicious requests before they reach the user's browser. 
+
+## How to use Server Side Rendering in Next.js
+
+Next.js is a popular React-based framework that makes it easy to create server side rendered applications. 
+
+### Step 1: Setting up Next.js
+
+The first step is to set up a Next.js project. To do this, you'll need to install the Next.js command line tools and initialize a new project. 
+
+``` 
+npm install -g create-next-app 
+create-next-app my-app
+```
+
+### Step 2: Adding Server Side Rendering
+
+Once your project is set up, you'll need to add server side rendering. To do this, you'll need to create a server.js file in the root of your project. This file should contain the following code: 
+
+``` 
+const { createServer } = require('http')
+const { parse } = require('url')
+const next = require('next')
+
+const dev = process.env.NODE_ENV !== 'production'
+const app = next({ dev })
+const handle = app.getRequestHandler()
+
+app.prepare().then(() => {
+  createServer((req, res) => {
+    const parsedUrl = parse(req.url, true)
+    handle(req, res, parsedUrl)
+  }).listen(3000, err => {
+    if (err) throw err
+    console.log('> Ready on http://localhost:3000')
+  })
+})
+```
+
+### Step 3: Serving the Page
+
+Finally, you'll need to serve the page. This can be done by adding a page component to the pages folder in your project. The page component should contain the following code: 
+
+``` 
+import React from 'react'
+
+const Page = () => {
+  return (
+    <div>
+      <h1>Hello World!</h1>
+    </div>
+  )
+}
+
+export default Page
+```
+
+## Conclusion
+
+In this tutorial, we discussed how to use server side rendering in Next.js. We started by setting up a Next.js project and then added server side rendering by creating a server.js file and adding a page component. With server side rendering, you can create faster loading webpages and more engaging user experiences. 
+
+### References
+
+- [Next.js Documentation](https://nextjs.org/docs/getting-started)
