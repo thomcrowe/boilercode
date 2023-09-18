@@ -38,6 +38,14 @@ export default function Card({ data }) {
                 </span>
               </li>
             ))}
+            <li className="flex items-center underline mt-1">
+              <a
+                href="https://useai.blog/?utm_source=boilercode"
+                target="_blank"
+              >
+                [Ad] Generate Blogs using AI in bulk
+              </a>
+            </li>
           </ul>
         </div>
         <div className="p-8 space-y-4">
