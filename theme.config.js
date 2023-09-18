@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 export default {
   logo: <span>BoilerCode.co Documentation</span>,
   project: {
@@ -5,5 +7,12 @@ export default {
   },
   feedback: false,
   editLink: false,
-  // ... other theme options
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    if (asPath !== "/") {
+      return {
+        titleTemplate: "%s - Boilercode.co",
+      };
+    }
+  },
 };
