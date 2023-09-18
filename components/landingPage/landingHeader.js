@@ -71,16 +71,7 @@ export default function LandingHeader() {
                       <CustomLink link="#features" text="NextJs AI" />
                     </li>
                     <li>
-                      <CustomLink
-                        link="#features"
-                        text="React Native Boilerplate"
-                      />
-                    </li>
-                    <li>
-                      <CustomLink
-                        link="#features"
-                        text="Chrome Extension Boilerplate"
-                      />
+                      <CustomLink link="#features" text="NextJs Custom Blog" />
                     </li>
                   </ul>
                 </div>
