@@ -59,7 +59,7 @@ export default function Card({ data }) {
                 <span className="text-4xl ml-2 text-slate-900 font-bold">
                   {data.newPrice}
                 </span>
-                <span className="bg-orange-700 px-3 py-1 rounded-3xl text-xs text-white font-bold">
+                <span className="bg-orange-200 px-3 py-1 rounded-3xl text-xs text-gray-600 font-bold">
                   {data.badgeText}
                 </span>
               </p>
