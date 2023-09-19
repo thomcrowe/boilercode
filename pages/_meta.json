@@ -14,5 +14,9 @@
   "tutorials": {
     "title": "Tutorials",
     "href": "/tutorials/NextJs-CRUD-Application"
+  },
+  "development": {
+    "title": "Development",
+    "href": "/development/Boilerplates-Demystified:-A-Guide-to-Efficient-Web-Development"
   }
 }
