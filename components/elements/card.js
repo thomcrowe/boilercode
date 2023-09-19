@@ -17,6 +17,9 @@ export default function Card({ data }) {
             <p className="text-gray-600 dark:text-gray-300">
               {data.description}
             </p>
+            <p className="text-gray-600 dark:text-gray-600 font-bold text-lg">
+              {data.techStack}
+            </p>
           </div>
           <hr className="w-1/3" />
           <ul className="list-none list-inside mb-6 text-left">
