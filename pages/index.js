@@ -9,6 +9,7 @@ import LandingCta from "@/components/landingPage/landingCta";
 import { useTheme } from "next-themes";
 import LandingTastimonials from "@/components/landingPage/landingTestimonials";
 import LandingStory from "@/components/landingPage/landingStory";
+import LandingTestimonials from "@/components/landingPage/landingTestimonials";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -26,6 +27,7 @@ export default function Home() {
           <LandingFeature />
           {/* <LandingPricing /> */}
           <LandingStory />
+          <LandingTestimonials />
           <LandingCta />
         </main>
         <LandingFooter />
