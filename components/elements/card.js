@@ -36,7 +36,7 @@ export default function Card({ data }) {
                   <FaCheck className="mr-2 text-green-900" />
                 )}
                 {feature.text}{" "}
-                <span className="ml-2 text-xs text-primary font-bold">
+                <span className="ml-2 text-xs text-primary font-bold hidden sm:inline">
                   {feature.hours}
                 </span>
               </li>
