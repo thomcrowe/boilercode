@@ -51,7 +51,8 @@ export default function LandingHero() {
               <ProductHunt />
               <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
                 Boilerplate Code for <br />
-                <span className="text-primary">{currentTyping}</span>
+                {/* <span className="text-primary">{currentTyping}</span> */}
+                <span className="text-primary">NextJs</span>
               </h1>
 
               <p className="mt-8 text-gray-700 dark:text-gray-300 text-3xl">

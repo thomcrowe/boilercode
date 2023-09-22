@@ -1,8 +1,8 @@
 ---
-title: NextJs SaaS Basic Boilerplate
+title: NextJs SaaS Boilerplate
 ---
 
-# How to use NextJs SaaS Basic Boilerplate
+# How to use NextJs SaaS Boilerplate
 
 ## Initial Setup
 
@@ -17,7 +17,7 @@ When you get the boilerplate code from BoilerCode.co, You need to update your ow
 
 ## User Auth
 
-In this NextJs boilerplate, we are using NextAuth for handling the user authentication. NextAuth is an Open Source Auth Framework which support Login with Email, Social Login and Login with Magic Link in very easy steps.
+In this NextJs SaaS boilerplate, we are using NextAuth for handling the user authentication. NextAuth is an Open Source Auth Framework which support Login with Email, Social Login and Login with Magic Link in very easy steps.
 
 **Guide in Boilerplate**
 
@@ -67,6 +67,11 @@ theme: {
 ```
 
 And you also have options to change themes in your authentication pages.
+
+## Langchain, Pinecone & OpenAI Integration
+
+**Only available in NextJs premium boilerplate**
+[Get NextJs SaaS Boilerplate](https://boilercode.co)
 
 ## Email Integration
 
@@ -131,7 +136,7 @@ All these components comes out of the box with BoilerCode boilerplates.
 
 ## Dynamic Payment Integration
 
-In our NextJs boilerplate code, we have made super simple to add Stripe or LemonSqueezy payments directly in the pricing page.
+In our NextJs SaaS boilerplate code, we have made super simple to add Stripe or LemonSqueezy payments directly in the pricing page.
 
 **Guide in Boilerplate**
 
@@ -158,8 +163,27 @@ For LemonSqueezy Payment Plan
 
 For Stripe Payment Plan
 
-**Only available in NextJs premium boilerplate**
-[Get NextJs SaaS Boilerplate](https://boilercode.co)
+```js
+{
+    title: "Stripe Payment",
+    price: "$19",
+    features: [
+      "Our Awesome Feature 1",
+      "Our Awesome Feature 2",
+      "Our Awesome Feature 3",
+    ],
+    paymentProvider: "Stripe",
+    lemonSqueezy: {},
+    stripe: {
+      lineItems: [
+        {
+          price: "PRODUCT_ID",
+          quantity: 1,
+        },
+      ],
+    },
+  },
+```
 
 ## Checkout - Stripe
 
@@ -168,7 +192,7 @@ For Stripe Payment Plan
 
 ## Checkout - LemonSqueezy
 
-NextJs Boilerplate code has extensive LemonSqueezy Integrations. It includes `Creating Checkouts`, `Creating Subscriptions`, `License Key` operations.
+NextJs SaaS Boilerplate code has extensive LemonSqueezy Integrations. It includes `Creating Checkouts`, `Creating Subscriptions`, `License Key` operations.
 
 **Guide in Boilerplate**
 
@@ -186,9 +210,7 @@ const LicenseKeyOps = {
 }
 ```
 
-## Subscription - LemonSqueezy
-
-**Only available in NextJs premium boilerplate**
+**Subscription Only available in NextJs premium boilerplate**
 [Get NextJs SaaS Boilerplate](https://boilercode.co)
 
 ## Webhook - Stripe
@@ -203,7 +225,7 @@ const LicenseKeyOps = {
 
 ## Customer Support
 
-NextJs boilerplate has integration with `Crisp` to help you add customer support on your platform.
+NextJs SaaS boilerplate has integration with `Crisp` to help you add customer support on your platform.
 
 **Guide in Boilerplate**
 
@@ -215,7 +237,7 @@ const CRISP_WEBSITE_ID = "";
 
 ## Google Analytics
 
-NextJs boilerplate has integration with `Google Analytics` to help you add analytics on your platform.
+NextJs SaaS boilerplate has integration with `Google Analytics` to help you add analytics on your platform.
 
 **Guide in Boilerplate**
 
@@ -227,7 +249,7 @@ const GOOGLE_ANALYTICS_CODE = "";
 
 ## Custom SEO
 
-NextJs boilerplate comes with fully supported SEO components.
+NextJs SaaS boilerplate comes with fully supported SEO components.
 
 **Guide in Boilerplate**
 
@@ -249,7 +271,7 @@ Here you just need to modify with your values and your application is SEO ready.
 
 ## Additional Stuff
 
-In NextJs Boilerplate, You have bunch of extra things to help you ship faster.
+In NextJs SaaS Boilerplate, You have bunch of extra things to help you ship faster.
 
 - Go to `components/elements/`, here you will find bunch of extra components
 

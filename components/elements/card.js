@@ -27,7 +27,7 @@ export default function Card({ data }) {
               <li
                 key={index}
                 className={`flex items-center ${
-                  feature.crossText ? "line-through" : ""
+                  feature.crossText ? "" : ""
                 }`}
               >
                 {feature.crossText ? (

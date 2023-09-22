@@ -17,7 +17,7 @@ When you get the boilerplate code from BoilerCode.co, You need to update your ow
 
 ## User Auth
 
-In this NextJs boilerplate, we are using NextAuth for handling the user authentication. NextAuth is an Open Source Auth Framework which support Login with Email, Social Login and Login with Magic Link in very easy steps.
+In this NextJs SaaS boilerplate, we are using NextAuth for handling the user authentication. NextAuth is an Open Source Auth Framework which support Login with Email, Social Login and Login with Magic Link in very easy steps.
 
 **Guide in Boilerplate**
 
@@ -67,6 +67,49 @@ theme: {
 ```
 
 And you also have options to change themes in your authentication pages.
+
+## Langchain, Pinecone & OpenAI Integration
+
+In NextJs SaaS boilerplate, you get Langchain, Pinecone and OpenAI integration out of the box.
+
+- Change in `.env` file
+
+```js
+OPENAI_API_KEY = YOUR_VALUE;
+
+PINECONE_API_KEY = YOUR_VALUE;
+PINECONE_ENVIRONMENT = YOUR_VALUE;
+PINECONE_INDEX_NAME = YOUR_VALUE;
+```
+
+You need to update above values to your own API Keys
+
+- Go to `/pages/dashboard.js`, You will find the AI components already there.
+
+```js
+export default function Dashboard() {
+  return (
+    <>
+      <LandingLayout>
+        <SEO />
+        <LandingHeader />
+        <main className="space-y-40 mb-0">
+          <DashboardHero />
+          <FeedDataCard />
+          <Chatbot />
+        </main>
+      </LandingLayout>
+    </>
+  );
+}
+```
+
+In above page, we have our AI components `<FeedDataCard />` and `<Chatbot />`
+
+- Go to `/components/aiComponent/` dir and you will find `FeedDataCard` and `Chatbot` components.
+- `FeedDataCard` already integrated with Langchain and Pinecone to upload PDF and store as vector db in Pinecone.
+- `FeedDataCard` also create entry into your postgres data (we are using Prisma for that. see Database integration section).
+- `ChatBot` also integrated with Langchain, Pinecone and OpenAI, which you can use to create Chatbot with your PDF documents without any changes.
 
 ## Email Integration
 
@@ -131,7 +174,7 @@ All these components comes out of the box with BoilerCode boilerplates.
 
 ## Dynamic Payment Integration
 
-In our NextJs boilerplate code, we have made super simple to add Stripe or LemonSqueezy payments directly in the pricing page.
+In our NextJs SaaS boilerplate code, we have made super simple to add Stripe or LemonSqueezy payments directly in the pricing page.
 
 **Guide in Boilerplate**
 
@@ -182,7 +225,7 @@ For Stripe Payment Plan
 
 ## Checkout - Stripe
 
-NextJs boilerplate comes with Stripe checkout library code so you can integrate with Stripe super fast.
+NextJs SaaS boilerplate comes with Stripe checkout library code so you can integrate with Stripe super fast.
 
 **Guide in Boilerplate**
 
@@ -196,7 +239,7 @@ export async function stripeCheckout({ lineItems }) {
 
 ## Checkout - LemonSqueezy
 
-NextJs Boilerplate code has extensive LemonSqueezy Integrations. It includes `Creating Checkouts`, `Creating Subscriptions`, `License Key` operations.
+NextJs SaaS Boilerplate code has extensive LemonSqueezy Integrations. It includes `Creating Checkouts`, `Creating Subscriptions`, `License Key` operations.
 
 **Guide in Boilerplate**
 
@@ -287,7 +330,7 @@ export async function POST(request) {
 
 ## Customer Support
 
-NextJs boilerplate has integration with `Crisp` to help you add customer support on your platform.
+NextJs SaaS boilerplate has integration with `Crisp` to help you add customer support on your platform.
 
 **Guide in Boilerplate**
 
@@ -299,7 +342,7 @@ const CRISP_WEBSITE_ID = "";
 
 ## Google Analytics
 
-NextJs boilerplate has integration with `Google Analytics` to help you add analytics on your platform.
+NextJs SaaS boilerplate has integration with `Google Analytics` to help you add analytics on your platform.
 
 **Guide in Boilerplate**
 
@@ -311,7 +354,7 @@ const GOOGLE_ANALYTICS_CODE = "";
 
 ## Custom SEO
 
-NextJs boilerplate comes with fully supported SEO components.
+NextJs SaaS boilerplate comes with fully supported SEO components.
 
 **Guide in Boilerplate**
 
@@ -328,7 +371,7 @@ Here you just need to modify with your values and your application is SEO ready.
 
 ## Custom Blog
 
-In NextJs boilerplate, You get an exciting feature for Custom Blogs, where you just need to put your `markdown` files into `pages/doc/` dir and your blog will be up and running.
+In NextJs SaaS boilerplate, You get an exciting feature for Custom Blogs, where you just need to put your `markdown` files into `pages/doc/` dir and your blog will be up and running.
 
 **Guide in Boilerplate**
 
@@ -349,7 +392,7 @@ export default {
 
 ## Additional Stuff
 
-In NextJs Boilerplate, You have bunch of extra things to help you ship faster.
+In NextJs SaaS Boilerplate, You have bunch of extra things to help you ship faster.
 
 - Go to `components/elements/`, here you will find bunch of extra components
 

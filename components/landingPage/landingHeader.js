@@ -68,9 +68,6 @@ export default function LandingHeader() {
                       <CustomLink link="#features" text="NextJs SaaS" />
                     </li>
                     <li>
-                      <CustomLink link="#features" text="NextJs AI" />
-                    </li>
-                    <li>
                       <CustomLink link="#features" text="NextJs Custom Blog" />
                     </li>
                   </ul>
