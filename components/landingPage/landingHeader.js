@@ -65,7 +65,7 @@ export default function LandingHeader() {
                 <div className="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0">
                   <ul className="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0">
                     <li>
-                      <CustomLink link="#features" text="NextJs SaaS" />
+                      <CustomLink link="#features" text="NextJs SaaS + AI" />
                     </li>
                     <li>
                       <CustomLink link="#features" text="NextJs Custom Blog" />
