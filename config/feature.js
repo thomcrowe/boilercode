@@ -139,7 +139,7 @@ const features = [
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout/buy/376cc037-396f-4a5b-9fea-05fc2c146c77?embed=1",
-    demoPageLink: "/nextjs-boilerplate-for-saas-free",
+    demoPageLink: "/nextjs-boilerplate-for-saas-standard",
     guidePageLink: "/blog/nextjs-saas-standard-boilerplate",
   },
   {
@@ -173,7 +173,7 @@ const features = [
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout/buy/a33bf353-23bf-46bd-b1ca-e83552db0140?embed=1",
-    demoPageLink: "/blog/nextjs-saas-free-boilerplate",
+    demoPageLink: "/blog/nextjs-saas#custom-blog",
     guidePageLink: "/blog/nextjs-saas#custom-blog",
   },
   // {

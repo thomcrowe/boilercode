@@ -25,7 +25,7 @@ export default function NextJsHome() {
       <LandingLayout>
         <LandingHeader />
         <main className="space-y-20 mb-0">
-          <DetailsHero title="NextJs Boilerplate for SaaS" />
+          <DetailsHero title="NextJs Boilerplate for SaaS + AI" />
           <DetailsFeature id="nextjs" />
           <DetailsHowTo
             title="NextJs Boilerplace Demo"
@@ -36,6 +36,11 @@ export default function NextJsHome() {
             title="Dynamic Payment Integraton Demo"
             subtitle="You can Integrate with Stripe and LemonSqueezy superfast"
             videoUrl="nextjs-boilerplate-2.mp4"
+          />
+          <DetailsHowTo
+            title="Control by Config"
+            subtitle="Everything is controlled by config file"
+            videoUrl="nextjs-ai-demo-2.mp4"
           />
           <DetailsCta id="nextjs" subtitle="Get NextJs SaaS Boilerplate now" />
         </main>
