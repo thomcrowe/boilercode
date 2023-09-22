@@ -2,9 +2,9 @@ import Head from "next/head";
 
 const SEO = ({ title, description, image }) => {
   //You can update your details here
-  const defaultTitle = "BoilerCode - SaaS Boilerplate code";
+  const defaultTitle = "BoilerCode - NextJs SaaS Boilerplates";
   const defaultDescription = "BoilerCode - SaaS Boilerplate code";
-  const defaultImageLink = "https://www.pagepe.com/pagepeHeader2.png";
+  const defaultImageLink = "https://www.boilercode.co/header.png";
   const url = "https://www.boilercode.co";
 
   return (
@@ -18,7 +18,7 @@ const SEO = ({ title, description, image }) => {
         content={description || defaultDescription}
       />
       <link rel="icon" type="image/x-icon" href="/icon-512.png"></link>
-      {/* <meta itemProp="image" content={defaultImageLink || image} /> */}
+      <meta itemProp="image" content={defaultImageLink || image} />
 
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
@@ -27,7 +27,7 @@ const SEO = ({ title, description, image }) => {
         property="og:description"
         content={description || defaultDescription}
       />
-      {/* <meta property="og:image" content={defaultImageLink || image} /> */}
+      <meta property="og:image" content={defaultImageLink || image} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title || defaultTitle} />
@@ -35,7 +35,7 @@ const SEO = ({ title, description, image }) => {
         name="twitter:description"
         content={description || defaultDescription}
       />
-      {/* <meta name="twitter:image" content={defaultImageLink || image} /> */}
+      <meta name="twitter:image" content={defaultImageLink || image} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
   );
