@@ -35,7 +35,7 @@ const features = [
     techStack: "NextJs + NextAuth + Stripe + LemonSqueezy + AI + Tailwind CSS",
     oldPrice: "$199",
     newPrice: "$99",
-    badgeText: "Use AWESOME50 for 50% Off",
+    badgeText: "Use PH40 for 40% Off",
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout/buy/1869026f-194e-4805-89b3-ded98fa974d6?embed=1",
@@ -135,7 +135,7 @@ const features = [
     techStack: "NextJs + NextAuth + LemonSqueezy + Tailwind CSS",
     oldPrice: "$199",
     newPrice: "$79",
-    badgeText: "Use AWESOME50 for 50% Off",
+    badgeText: "Use PH40 for 40% Off",
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout/buy/376cc037-396f-4a5b-9fea-05fc2c146c77?embed=1",
@@ -169,7 +169,7 @@ const features = [
     techStack: "NextJs + LemonSqueezy + Tailwind CSS",
     oldPrice: "$199",
     newPrice: "$49",
-    badgeText: "Use AWESOME50 for 50% Off",
+    badgeText: "Use PH40 for 40% Off",
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout/buy/a33bf353-23bf-46bd-b1ca-e83552db0140?embed=1",
