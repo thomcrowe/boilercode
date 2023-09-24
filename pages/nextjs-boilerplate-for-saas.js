@@ -44,6 +44,12 @@ export default function NextJsHome() {
           />
           <DetailsHowTo
             key="details-how-to-3"
+            title="Launch AI Apps"
+            subtitle="Langchain, Pinecone & OpenAI Supported"
+            videoId="iJaGelAyq-k"
+          />
+          <DetailsHowTo
+            key="details-how-to-4"
             title="Control by Config"
             subtitle="Everything is controlled by config file"
             videoId="R_ALL4LNC1c"
