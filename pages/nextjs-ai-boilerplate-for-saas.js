@@ -30,12 +30,12 @@ export default function NextJsHome() {
           <DetailsHowTo
             title="NextJs AI Boilerplace Demo"
             subtitle="Here is how you can use NextJs AI Boilerplate to ship fast"
-            videoUrl="nextjs-ai-demo-1.mp4"
+            videoId="lRjdW8He-54"
           />
           <DetailsHowTo
             title="Control by Config"
             subtitle="Everything is controlled by config file"
-            videoUrl="nextjs-ai-demo-2.mp4"
+            videoId="R_ALL4LNC1c"
           />
           <DetailsCta
             id="nextjs-ai"

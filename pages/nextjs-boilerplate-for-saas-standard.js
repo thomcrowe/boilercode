@@ -30,14 +30,17 @@ export default function NextJsHome() {
           <DetailsHowTo
             title="NextJs Boilerplace Demo"
             subtitle="Here is how you can use NextJs Boilerplate to ship fast"
-            videoUrl="nextjs-boilercode-1.mp4"
+            videoId="lRjdW8He-54"
           />
           <DetailsHowTo
             title="Dynamic Payment Integraton Demo"
             subtitle="You can Integrate with Stripe and LemonSqueezy superfast"
-            videoUrl="nextjs-boilerplate-2.mp4"
+            videoId="aM6mYZEc3MA"
           />
-          <DetailsCta id="nextjs-free" subtitle="Get NextJs SaaS Boilerplate now" />
+          <DetailsCta
+            id="nextjs-free"
+            subtitle="Get NextJs SaaS Boilerplate now"
+          />
         </main>
         <LandingFooter />
       </LandingLayout>
