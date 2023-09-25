@@ -34,7 +34,7 @@ const features = [
     ],
     techStack: "NextJs + NextAuth + Stripe + LemonSqueezy + AI + Tailwind CSS",
     oldPrice: "$199",
-    newPrice: "$99",
+    newPrice: "$119",
     badgeText: "Use PH40 for 40% Off",
     paymentProvider: "LemonSqueezy",
     buyLink:
@@ -134,7 +134,7 @@ const features = [
     ],
     techStack: "NextJs + NextAuth + LemonSqueezy + Tailwind CSS",
     oldPrice: "$199",
-    newPrice: "$79",
+    newPrice: "$99",
     badgeText: "Use PH40 for 40% Off",
     paymentProvider: "LemonSqueezy",
     buyLink:
