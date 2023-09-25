@@ -6,11 +6,11 @@ export default function ProductHunt() {
         dangerouslySetInnerHTML={{
           __html: `
           <a
-          href="https://www.producthunt.com/posts/boilercode?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-boilercode"
+          href="https://www.producthunt.com/posts/boilercode?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-boilercode"
           target="_blank"
         >
           <img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=415507&theme=light"
+            src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=415507&theme=light&period=daily"
             alt="BoilerCode - Ship&#0032;your&#0032;SaaS&#0032;super&#0032;fast | Product Hunt"
             style="width: 250px; height: 54px;"
             width="250"
