@@ -26,9 +26,7 @@ export default function Card({ data }) {
             {data.features.map((feature, index) => (
               <li
                 key={index}
-                className={`flex items-center ${
-                  feature.crossText ? "" : ""
-                }`}
+                className={`flex items-center ${feature.crossText ? "" : ""}`}
               >
                 {feature.crossText ? (
                   <FaTimes className="mr-2 text-red-900" />
@@ -55,7 +53,8 @@ export default function Card({ data }) {
           {data.id == "nextjs" ||
           data.id == "nextjs-ai" ||
           data.id == "nextjs-free" ||
-          data.id == "nextjs-blog" ? (
+          data.id == "nextjs-blog" ||
+          data.id == "chrome-extension" ? (
             <>
               <p className="flex items-center space-x-2">
                 <span className="line-through text-xl">{data.oldPrice}</span>

@@ -176,55 +176,37 @@ const features = [
     demoPageLink: "/blog/nextjs-saas#custom-blog",
     guidePageLink: "/blog/nextjs-saas#custom-blog",
   },
-  // {
-  //   Icon: TbBrandReact,
-  //   title: "React",
-  //   description:
-  //     "React SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
-  //   features: [
-  //     { text: "User Auth (Social Login, Magic Link)", hours: "" },
-  //     { text: "Database (MongoDb)", hours: "" },
-  //     { text: "Landing Page", hours: "" },
-  //     { text: "Email Integration", hours: "" },
-  //     { text: "Customer Support (Crisp)", hours: "" },
-  //     { text: "LemonSqueezy Integration", hours: "" },
-  //     { text: "Stripe Integration", hours: "" },
-  //     { text: "Custom SEO Configurations", hours: "" },
-  //   ],
-  //   paymentProvider: "LemonSqueezy",
-  //   buyLink:
-  //     "https://xpage.lemonsqueezy.com/checkout/buy/cc173c6e-d80a-4a50-a107-0afd31bddcc4?embed=1",
-  // },
-  // {
-  //   Icon: TbBrandReactNative,
-  //   title: "React Native",
-  //   description:
-  //     "React Native Mobile App Boilerplate code including the following things to help you launch your mobile app faster than ever.",
-  //   features: [
-  //     { text: "Firebase Auth (Social Login, Magic Link)", hours: "" },
-  //     { text: "Database (MongoDb)", hours: "" },
-  //     { text: "Email Integration", hours: "" },
-  //     { text: "RevenueCat Integration", hours: "" },
-  //   ],
-  //   paymentProvider: "LemonSqueezy",
-  //   buyLink:
-  //     "https://xpage.lemonsqueezy.com/checkout/buy/cc173c6e-d80a-4a50-a107-0afd31bddcc4?embed=1",
-  // },
-  // {
-  //   Icon: TbBrandChrome,
-  //   title: "Chrome Extension",
-  //   description:
-  //     "Chrome Extension Boilerplate code which includes Payment Integration, Also ability to add your custom UI to any webpage.",
-  //   features: [
-  //     { text: "Chat Window UI", hours: "" },
-  //     { text: "OpenAI Integration", hours: "" },
-  //     { text: "LemonSqueezy Integration", hours: "" },
-  //     { text: "Using React", hours: "" },
-  //   ],
-  //   paymentProvider: "LemonSqueezy",
-  //   buyLink:
-  //     "https://xpage.lemonsqueezy.com/checkout/buy/cc173c6e-d80a-4a50-a107-0afd31bddcc4?embed=1",
-  // },
+  {
+    Icon: TbBrandReact,
+    id: "chrome-extension",
+    title: "ChatGPT Chrome Extension - React",
+    description: "Boilerplate for Chrome Extension with ChatGPT using React",
+    features: [
+      { text: "ChatGPT Integration", hours: "+ Saving 5 hrs" },
+      {
+        text: "Custom Character Chat",
+        hours: "+ Saving 4 hrs",
+      },
+      {
+        text: "LemonSqueezy Checkout (Including Paypal)",
+        hours: "+ Saving 4 hrs",
+      },
+      {
+        text: "Chat UI",
+        hours: "+ Saving 4 hrs",
+      },
+      { text: "Chakra UI", hours: "+ Saving 3 hrs" },
+    ],
+    techStack: "React + Chrome Extension + LemonSqueezy + ChakraUI",
+    oldPrice: "$199",
+    newPrice: "$79",
+    badgeText: "Use PH40 for 40% Off",
+    paymentProvider: "LemonSqueezy",
+    buyLink:
+      "https://xpage.lemonsqueezy.com/checkout?cart=43a9ccd9-f2e0-4061-a902-e99cb2804814",
+    // demoPageLink: "#",
+    // guidePageLink: "#",
+  },
 ];
 
 export default features;
