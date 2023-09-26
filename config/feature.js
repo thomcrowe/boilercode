@@ -207,6 +207,42 @@ const features = [
     // demoPageLink: "#",
     // guidePageLink: "#",
   },
+  {
+    Icon: TbBrandReact,
+    id: "react",
+    title: "React SaaS + AI (Pre-Launch)",
+    description:
+      "React SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
+    features: [
+      { text: "User Auth (Social Login, Magic Link)", hours: "+ Saving 5 hrs" },
+      { text: "Database Integration", hours: "+ Saving 4 hrs" },
+      { text: "Landing Page", hours: "+ Saving 8 hrs" },
+      { text: "Email Integration", hours: "+ Saving 3 hrs" },
+      { text: "Stripe Checkout + Webhook", hours: "+ Saving 6 hrs" },
+      {
+        text: "LemonSqueezy Checkout (Including Paypal)",
+        hours: "+ Saving 3 hrs",
+      },
+      { text: "LemonSqueezy Webhook + Subscription", hours: "+ Saving 5 hrs" },
+      { text: "Tailwind CSS", hours: "+ Saving 3 hrs" },
+      { text: "Customer Support (Crisp)", hours: "+ Saving 3 hrs" },
+      { text: "Custom SEO Configurations", hours: "+ Saving 4 hrs" },
+      { text: "Custom Blog Integration", hours: "+ Saving 10 hrs" },
+      { text: "LangChain Integration", hours: "+ Saving 6 hrs" },
+      { text: "Pinecone Integration", hours: "+ Saving 4 hrs" },
+      { text: "OpenAI Integration", hours: "+ Saving 4 hrs" },
+      { text: "PDF Chat", hours: "+ Saving 5 hrs" },
+    ],
+    techStack: "React + User Auth + Stripe + LemonSqueezy + AI + Tailwind CSS",
+    oldPrice: "$199",
+    newPrice: "$59",
+    badgeText: "Pre-Launch Offer ($119 after launch)",
+    paymentProvider: "LemonSqueezy",
+    buyLink:
+      "https://xpage.lemonsqueezy.com/checkout/buy/1499a2ac-aa3b-4765-9473-504a3ee65ebb",
+    // demoPageLink: "/nextjs-boilerplate-for-saas",
+    // guidePageLink: "/blog/nextjs-saas",
+  },
 ];
 
 export default features;

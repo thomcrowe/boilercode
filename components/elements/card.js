@@ -54,7 +54,8 @@ export default function Card({ data }) {
           data.id == "nextjs-ai" ||
           data.id == "nextjs-free" ||
           data.id == "nextjs-blog" ||
-          data.id == "chrome-extension" ? (
+          data.id == "chrome-extension" ||
+          data.id == "react" ? (
             <>
               <p className="flex items-center space-x-2">
                 <span className="line-through text-xl">{data.oldPrice}</span>
