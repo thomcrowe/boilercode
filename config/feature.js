@@ -42,45 +42,6 @@ const features = [
     demoPageLink: "/nextjs-boilerplate-for-saas",
     guidePageLink: "/blog/nextjs-saas",
   },
-  // {
-  //   Icon: TbBrandNextjs,
-  //   id: "nextjs-ai",
-  //   title: "NextJs AI",
-  //   description:
-  //     "NextJs SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
-  //   features: [
-  //     { text: "User Auth (Social Login, Magic Link)", hours: "+ Saving 5 hrs" },
-  //     { text: "LangChain Integration", hours: "+ Saving 6 hrs" },
-  //     { text: "Pinecone Integration", hours: "+ Saving 4 hrs" },
-  //     { text: "OpenAI Integration", hours: "+ Saving 4 hrs" },
-  //     { text: "PDF Chat", hours: "+ Saving 5 hrs" },
-  //     { text: "Database Integration", hours: "+ Saving 4 hrs" },
-  //     { text: "Landing Page", hours: "+ Saving 8 hrs" },
-  //     { text: "Email Integration", hours: "+ Saving 3 hrs" },
-  //     { text: "Stripe Checkout", hours: "+ Saving 3 hrs" },
-  //     { text: "Strip Webhook", hours: "+ Saving 3 hrs" },
-  //     {
-  //       text: "LemonSqueezy Checkout (Including Paypal)",
-  //       hours: "+ Saving 3 hrs",
-  //     },
-  //     { text: "LemonSqueezy Webhook", hours: "+ Saving 3 hrs" },
-  //     { text: "LemonSqueezy Subscription", hours: "+ Saving 4 hrs" },
-  //     { text: "Tailwind CSS", hours: "+ Saving 3 hrs" },
-  //     { text: "Customer Support (Crisp)", hours: "+ Saving 3 hrs" },
-  //     { text: "Custom SEO Configurations", hours: "+ Saving 4 hrs" },
-  //     { text: "Custom Blog Integration", hours: "+ Saving 10 hrs" },
-  //   ],
-  //   techStack:
-  //     "NextJs + NextAuth + Stripe + LemonSqueezy + Langchain + Tailwind CSS",
-  //   oldPrice: "$199",
-  //   newPrice: "$99",
-  //   badgeText: "Use AWESOME50 for 50% off",
-  //   paymentProvider: "LemonSqueezy",
-  //   buyLink:
-  //     "https://xpage.lemonsqueezy.com/checkout/buy/9731e04b-68cc-4ec7-9cda-6043e649a5f3?embed=1",
-  //   demoPageLink: "/nextjs-ai-boilerplate-for-saas",
-  //   guidePageLink: "/blog/nextjs-ai",
-  // },
   {
     Icon: TbBrandNextjs,
     id: "nextjs-free",
@@ -142,40 +103,40 @@ const features = [
     demoPageLink: "/nextjs-boilerplate-for-saas-standard",
     guidePageLink: "/blog/nextjs-saas-standard-boilerplate",
   },
-  {
-    Icon: TbBrandNextjs,
-    id: "nextjs-blog",
-    title: "NextJs Blog with Landing Page",
-    description:
-      "Get exact replica of Boilercode.co landing page with custom blog feature.",
-    features: [
-      { text: "Landing Page", hours: "+ Saving 8 hrs" },
-      {
-        text: "Custom Blog Integration",
-        hours: "+ Saving 10 hrs",
-      },
-      {
-        text: "LemonSqueezy Checkout (Including Paypal)",
-        hours: "+ Saving 3 hrs",
-      },
-      { text: "Tailwind CSS", hours: "+ Saving 3 hrs" },
-      { text: "Customer Support (Crisp)", hours: "+ Saving 3 hrs" },
-      { text: "Custom SEO Configurations", hours: "+ Saving 4 hrs" },
-      {
-        text: "Just put your blog file into a folder and your blog will be up and running",
-        hours: "+ Saving 4 hrs",
-      },
-    ],
-    techStack: "NextJs + LemonSqueezy + Tailwind CSS",
-    oldPrice: "$199",
-    newPrice: "$49",
-    badgeText: "Use PH40 for 40% Off",
-    paymentProvider: "LemonSqueezy",
-    buyLink:
-      "https://xpage.lemonsqueezy.com/checkout/buy/a33bf353-23bf-46bd-b1ca-e83552db0140?embed=1",
-    demoPageLink: "/blog/nextjs-saas#custom-blog",
-    guidePageLink: "/blog/nextjs-saas#custom-blog",
-  },
+  // {
+  //   Icon: TbBrandNextjs,
+  //   id: "nextjs-blog",
+  //   title: "NextJs Blog with Landing Page",
+  //   description:
+  //     "Get exact replica of Boilercode.co landing page with custom blog feature.",
+  //   features: [
+  //     { text: "Landing Page", hours: "+ Saving 8 hrs" },
+  //     {
+  //       text: "Custom Blog Integration",
+  //       hours: "+ Saving 10 hrs",
+  //     },
+  //     {
+  //       text: "LemonSqueezy Checkout (Including Paypal)",
+  //       hours: "+ Saving 3 hrs",
+  //     },
+  //     { text: "Tailwind CSS", hours: "+ Saving 3 hrs" },
+  //     { text: "Customer Support (Crisp)", hours: "+ Saving 3 hrs" },
+  //     { text: "Custom SEO Configurations", hours: "+ Saving 4 hrs" },
+  //     {
+  //       text: "Just put your blog file into a folder and your blog will be up and running",
+  //       hours: "+ Saving 4 hrs",
+  //     },
+  //   ],
+  //   techStack: "NextJs + LemonSqueezy + Tailwind CSS",
+  //   oldPrice: "$199",
+  //   newPrice: "$49",
+  //   badgeText: "Use PH40 for 40% Off",
+  //   paymentProvider: "LemonSqueezy",
+  //   buyLink:
+  //     "https://xpage.lemonsqueezy.com/checkout/buy/a33bf353-23bf-46bd-b1ca-e83552db0140?embed=1",
+  //   demoPageLink: "/blog/nextjs-saas#custom-blog",
+  //   guidePageLink: "/blog/nextjs-saas#custom-blog",
+  // },
   {
     Icon: TbBrandReact,
     id: "chrome-extension",
