@@ -200,7 +200,7 @@ const features = [
     techStack: "React + Chrome Extension + LemonSqueezy + ChakraUI",
     oldPrice: "$199",
     newPrice: "$79",
-    badgeText: "Use PH40 for 40% Off",
+    badgeText: "Use PHNEW for 40% Off",
     paymentProvider: "LemonSqueezy",
     buyLink:
       "https://xpage.lemonsqueezy.com/checkout?cart=43a9ccd9-f2e0-4061-a902-e99cb2804814",
@@ -235,7 +235,7 @@ const features = [
     ],
     techStack: "React + User Auth + Stripe + LemonSqueezy + AI + Tailwind CSS",
     oldPrice: "$199",
-    newPrice: "$59",
+    newPrice: "$79",
     badgeText: "Pre-Launch Offer ($119 after launch)",
     paymentProvider: "LemonSqueezy",
     buyLink:
