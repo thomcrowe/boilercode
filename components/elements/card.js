@@ -62,9 +62,11 @@ export default function Card({ data }) {
                 <span className="text-4xl ml-2 text-slate-900 font-bold">
                   {data.newPrice}
                 </span>
-                <span className="bg-orange-200 px-3 py-1 rounded-3xl text-xs text-gray-600 font-bold">
-                  {data.badgeText}
-                </span>
+                {data.badgeText ? (
+                  <span className="bg-orange-200 px-3 py-1 rounded-3xl text-xs text-gray-600 font-bold">
+                    {data.badgeText}
+                  </span>
+                ) : null}
               </p>
 
               <div className="flex flex-wrap gap-y-4 gap-x-2">
