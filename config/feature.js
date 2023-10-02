@@ -14,7 +14,7 @@ const features = [
       {
         Icon: TbBrandNextjs,
         id: "nextjs",
-        title: "NextJs SaaS + AI",
+        title: "NextJs SaaS + AI (Recommended)",
         description:
           "NextJs SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
         features: [
