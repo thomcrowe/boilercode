@@ -15,28 +15,31 @@ const LandingFeature = () => {
           <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400  to-indigo-600"></div>
         </div>
         <LandingContainer>
-          <div className="md:w-2/3 lg:w-1/2">
-            <Sprikle />
-
-            <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
-              Available Boilerplates
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              These boilerplates are ready to use. You just need to clone and
-              can start running.
-            </p>
-          </div>
-          <div
-            className="mt-16 grid overflow-hidden rounded-3xl divide-x divide-y divide-gray-100 dark:divide-gray-700
-       border text-gray-600 border-gray-100 dark:border-gray-700 
-       sm:grid-cols-1 lg:grid-cols-1  xl:grid-cols-1"
-          >
-            {features.map((feature, index) => (
-              <div className="" key={"feature_" + index}>
-                <Card data={feature} />
+          {features.map((feature, index) => (
+            <div className="mb-8" key={"feature_" + index}>
+              <div className="md:w-2/3 lg:w-1/2">
+                <Sprikle />
+                <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                  {feature.section}
+                </h2>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {feature.subtitle}
+                </p>
               </div>
-            ))}
-          </div>
+
+              <div
+                className="mt-16 grid overflow-hidden rounded-3xl divide-x divide-y divide-gray-100 dark:divide-gray-700
+       border text-gray-600 border-gray-100 dark:border-gray-700 
+       sm:grid-cols-1 lg:grid-cols-1  xl:grid-cols-2"
+              >
+                {feature.boilerplates.map((feature, index) => (
+                  <div className="" key={"feature_" + index}>
+                    <Card data={feature} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </LandingContainer>
       </div>
     </>
