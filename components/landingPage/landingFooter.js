@@ -30,6 +30,15 @@ const LandingFooter = () => {
                 Resources
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <li className="mb-4">
+                  <a
+                    href="https://xpage.lemonsqueezy.com/affiliates"
+                    target="_blank"
+                    className="hover:underline"
+                  >
+                    Affiliation Program - 30% Commission
+                  </a>
+                </li>
                 <li className="mb-4">
                   <a
                     href="https://uniqueside.io/?utm_source=boilercode"
