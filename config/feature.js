@@ -42,6 +42,7 @@ const features = [
           { text: "Pinecone Integration", hours: "+ Saving 4 hrs" },
           { text: "OpenAI Integration", hours: "+ Saving 4 hrs" },
           { text: "PDF Chat", hours: "+ Saving 5 hrs" },
+          { text: "Dalle-3 Image Generation", hours: "+ Saving 4 hrs" },
         ],
         techStack:
           "NextJs + NextAuth + Stripe + LemonSqueezy + AI + Tailwind CSS",
