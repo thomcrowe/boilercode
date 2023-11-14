@@ -23,6 +23,27 @@ const LandingFooter = () => {
                 BoilerCode.co
               </span>
             </a>
+            <div className="sm:flex sm:items-center sm:justify-between mt-4">
+              <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                Built by{" "}
+                <a
+                  href="https://manojahi.com"
+                  target="_blank"
+                  className="underline text-orange-700"
+                >
+                  Manoj {" "}
+                </a>
+                You can follow me on {" "}
+                <a
+                  href="https://x.com/manoj_ahi"
+                  target="_blank"
+                  className="underline"
+                >
+                  Twitter
+                </a>
+              </span>
+              <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0"></div>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-24 sm:grid-cols-2">
             <div className="text-left">
@@ -30,7 +51,7 @@ const LandingFooter = () => {
                 Resources
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
+                <li className="mb-4">
                   <a
                     href="https://xpage.lemonsqueezy.com/affiliates"
                     target="_blank"
@@ -87,6 +108,7 @@ const LandingFooter = () => {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
