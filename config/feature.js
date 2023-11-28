@@ -198,7 +198,7 @@ const features = [
         paymentProvider: "LemonSqueezy",
         buyLink:
           "https://xpage.lemonsqueezy.com/checkout/buy/0baf8f24-cd6b-4279-80de-2bf35e0cff49",
-        // demoPageLink: "#",
+        demoPageLink: "/react-chrome-extension-boilerplate-with-ai",
         // guidePageLink: "#",
       },
     ],
