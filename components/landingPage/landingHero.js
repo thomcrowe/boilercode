@@ -49,9 +49,9 @@ export default function LandingHero() {
           <div className="relative pt-32 ml-auto">
             <div className="lg:w-2/3 text-center mx-auto">
               <ProductHunt />
-              <p className="px-2 py-1 border border-slate-900 text-slate-900 rounded-lg max-w-max mx-auto mb-3 text-sm">
+              {/* <p className="px-2 py-1 border border-slate-900 text-slate-900 rounded-lg max-w-max mx-auto mb-3 text-sm">
                 <span className="font-bold">50FRIDAY</span> - 50% OFF
-              </p>
+              </p> */}
 
               <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
                 Boilerplate Code for <br />
