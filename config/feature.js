@@ -197,7 +197,7 @@ const features = [
         // badgeText: "Use PHNEW for 40% Off",
         paymentProvider: "LemonSqueezy",
         buyLink:
-          "https://xpage.lemonsqueezy.com/checkout?cart=43a9ccd9-f2e0-4061-a902-e99cb2804814",
+          "https://xpage.lemonsqueezy.com/checkout/buy/0baf8f24-cd6b-4279-80de-2bf35e0cff49",
         // demoPageLink: "#",
         // guidePageLink: "#",
       },
