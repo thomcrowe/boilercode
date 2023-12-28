@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import LandingContainer from "./landingContainer";
-import Button from "../elements/button";
 import CustomLink from "../elements/customLink";
 
 export default function LandingHeader() {
+  const handleCloseMenu = () => {
+    document.getElementById("toggle_nav").checked = false;
+  };
+
   return (
     <>
       <header>
@@ -22,6 +25,7 @@ export default function LandingHeader() {
                   href="/"
                   aria-label="logo"
                   className="flex space-x-2 items-center"
+                  onClick={handleCloseMenu}
                 >
                   <div aria-hidden="true" className="flex space-x-1"></div>
                   <span className="text-2xl font-bold text-gray-900 dark:text-white">
