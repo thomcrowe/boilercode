@@ -51,7 +51,7 @@ const features = [
         // badgeText: "Use PH40 for 40% Off",
         paymentProvider: "LemonSqueezy",
         buyLink:
-          "https://xpage.lemonsqueezy.com/checkout/buy/1869026f-194e-4805-89b3-ded98fa974d6?embed=1",
+          "https://dome-global-inc.lemonsqueezy.com/checkout/buy/b83779af-ae2b-42e6-9599-31b8bff9e94a",
         demoPageLink: "/nextjs-boilerplate-for-saas",
         guidePageLink: "/blog/nextjs-saas",
       },
@@ -116,7 +116,7 @@ const features = [
         // badgeText: "Use PH40 for 40% Off",
         paymentProvider: "LemonSqueezy",
         buyLink:
-          "https://xpage.lemonsqueezy.com/checkout/buy/376cc037-396f-4a5b-9fea-05fc2c146c77?embed=1",
+          "https://dome-global-inc.lemonsqueezy.com/checkout/buy/8f1226ca-9d0d-4d3a-bf4d-46b6b8ef1b16",
         demoPageLink: "/nextjs-boilerplate-for-saas-standard",
         guidePageLink: "/blog/nextjs-saas-standard-boilerplate",
       },
@@ -165,7 +165,7 @@ const features = [
         newPrice: "$99",
         paymentProvider: "LemonSqueezy",
         buyLink:
-          "https://xpage.lemonsqueezy.com/checkout/buy/1499a2ac-aa3b-4765-9473-504a3ee65ebb",
+          "https://dome-global-inc.lemonsqueezy.com/checkout/buy/9370e6c4-c80e-42da-8d44-ad5a292dbd4b",
         // demoPageLink: "/nextjs-boilerplate-for-saas",
         // guidePageLink: "/blog/nextjs-saas",
       },
@@ -197,7 +197,7 @@ const features = [
         // badgeText: "Use PHNEW for 40% Off",
         paymentProvider: "LemonSqueezy",
         buyLink:
-          "https://xpage.lemonsqueezy.com/checkout/buy/0baf8f24-cd6b-4279-80de-2bf35e0cff49",
+          "https://dome-global-inc.lemonsqueezy.com/checkout/buy/53f49cbd-e857-49dd-995e-218f654282c7",
         demoPageLink: "/react-chrome-extension-boilerplate-with-ai",
         // guidePageLink: "#",
       },
