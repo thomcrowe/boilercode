@@ -28,7 +28,6 @@ export default function Home() {
           {/* <LandingPricing /> */}
           <LandingStory />
           <LandingTestimonials />
-          <LandingCta />
         </main>
         <LandingFooter />
       </LandingLayout>

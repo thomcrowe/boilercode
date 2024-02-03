@@ -13,15 +13,12 @@ const LandingFooter = () => {
         </div> */}
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://boilercode.co/" className="flex items-center">
+            <a href="https://trydome.io/" className="flex items-center">
               <img
-                src="/icon-512.png"
+                src="/dome-powered.png"
                 className="h-8 mr-3"
-                alt="FlowBite Logo"
+                alt="Dome Logo"
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                BoilerCode.co
-              </span>
             </a>
             <div className="sm:flex sm:items-center sm:justify-between mt-4">
               <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
@@ -33,7 +30,7 @@ const LandingFooter = () => {
                 >
                   Manoj {" "}
                 </a>
-                You can follow me on {" "}
+                You can follow on {" "}
                 <a
                   href="https://x.com/manoj_ahi"
                   target="_blank"
@@ -46,65 +43,6 @@ const LandingFooter = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-24 sm:grid-cols-2">
-            <div className="text-left">
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Resources
-              </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a
-                    href="https://xpage.lemonsqueezy.com/affiliates"
-                    target="_blank"
-                    className="hover:underline"
-                  >
-                    Affiliation Program - 30% Commission
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a
-                    href="https://uniqueside.io/?utm_source=boilercode"
-                    target="_blank"
-                    className="hover:underline"
-                  >
-                    Launch your Product in 15 days
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a
-                    href="https://pagepe.com/?utm_source=boilercode"
-                    target="_blank"
-                    className="hover:underline"
-                  >
-                    Put your Domains into Work
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://sidefeature.com/?utm_source=boilercode"
-                    target="_blank"
-                    className="hover:underline"
-                  >
-                    Create and Share Forms
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="text-left">
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Follow us
-              </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a
-                    href="https://twitter.com/manoj_ahi/?utm_source=uniqueside"
-                    target="_blank"
-                    className="hover:underline "
-                  >
-                    Twitter
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
