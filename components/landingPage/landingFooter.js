@@ -49,7 +49,7 @@ const LandingFooter = () => {
 
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
+            © 2024{" "}
             <a href="/" className="hover:underline">
               BoilerCode.co
             </a>
