@@ -129,48 +129,6 @@ const features = [
     boilerplates: [
       {
         Icon: TbBrandReact,
-        id: "react",
-        title: "React SaaS",
-        description:
-          "React SaaS code which includes all the essential features that you need to launch fast. Following are the included things",
-        features: [
-          {
-            text: "Supabase Auth (Social Login, Magic Link)",
-            hours: "+ Saving 5 hrs",
-          },
-          { text: "Landing Page", hours: "+ Saving 8 hrs" },
-          { text: "Stripe Checkout", hours: "+ Saving 6 hrs" },
-          {
-            text: "LemonSqueezy Checkout (Including Paypal)",
-            hours: "+ Saving 3 hrs",
-          },
-          { text: "Tailwind CSS", hours: "+ Saving 3 hrs" },
-          { text: "Customer Support (Crisp)", hours: "+ Saving 3 hrs" },
-          { text: "Custom SEO Configurations", hours: "+ Saving 4 hrs" },
-          {
-            text: "Langchain, Pinecone and OpenAI Support",
-            hours: "place into your node server",
-          },
-          {
-            text: "Stripe and LemonSqueezy webhook Support",
-            hours: "place into your node server",
-          },
-          {
-            text: "Server related code you need to place into your node server",
-          },
-        ],
-        techStack:
-          "React + Supabase Auth + Stripe + LemonSqueezy + Tailwind CSS + Server Side Support Code Files",
-        oldPrice: "$199",
-        newPrice: "$99",
-        paymentProvider: "LemonSqueezy",
-        buyLink:
-          "https://dome-global-inc.lemonsqueezy.com/checkout/buy/9370e6c4-c80e-42da-8d44-ad5a292dbd4b",
-        // demoPageLink: "/nextjs-boilerplate-for-saas",
-        // guidePageLink: "/blog/nextjs-saas",
-      },
-      {
-        Icon: TbBrandReact,
         id: "chrome-extension",
         title: "ChatGPT Chrome Extension - React",
         description:

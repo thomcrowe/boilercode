@@ -5,7 +5,6 @@ import Button from "../elements/button";
 import {
   TbBrandNextjs,
   TbBrandPaypalFilled,
-  TbBrandReact,
   TbBrandChrome,
   TbBrandMailgun,
   TbDatabase,
@@ -16,7 +15,7 @@ import {
 import { FaStripe } from "react-icons/fa";
 
 export default function LandingHero() {
-  const words = ["NextJs SaaS", "React SaaS"];
+  const words = ["NextJs SaaS"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentTyping, setCurrentTyping] = useState("");
   const [charIndex, setCharIndex] = useState(0);
