@@ -10,16 +10,25 @@ import { useTheme } from "next-themes";
 import LandingTastimonials from "@/components/landingPage/landingTestimonials";
 import LandingStory from "@/components/landingPage/landingStory";
 import LandingTestimonials from "@/components/landingPage/landingTestimonials";
+import Link from "next/link";
+import React, { useEffect } from "react";
+import Script from "next/script";
+import * as fbq from "../lib/fpixel";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
+  const handleClick = () => {
+    fbq.event("Purchase", { currency: "USD", value: 10 });
+  };
 
-  setTheme("light");
+  useEffect(() => {
+    setTheme("light");
+  }, []);
 
   return (
     <>
-      <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+      <Script src="https://assets.lemonsqueezy.com/lemon.js" defer></Script>
       <LandingLayout>
         <LandingHeader />
         <main className="space-y-40 mb-0">

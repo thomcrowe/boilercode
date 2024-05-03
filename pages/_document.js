@@ -1,5 +1,6 @@
 import CustomerSupport from "@/components/additional/customerSupport";
 import { Html, Head, Main, NextScript } from "next/document";
+import { FB_PIXEL_ID } from "../lib/fpixel";
 
 export default function Document() {
   return (
@@ -17,10 +18,20 @@ export default function Document() {
           }}
         />
         <script src="https://lmsqueezy.com/affiliate.js" defer />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+          />
+        </noscript>
       </Head>
       <body className="min-h-screen">
         <Main />
         <NextScript />
+        {/* Add CustomerSupport component */}
+        <CustomerSupport />
       </body>
     </Html>
   );
