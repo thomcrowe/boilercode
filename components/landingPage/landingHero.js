@@ -59,7 +59,7 @@ export default function LandingHero() {
               </h1>
 
               <p className="mt-8 text-gray-700 dark:text-gray-300 text-3xl">
-                Ship your{" "}
+                Ship Your{" "}
                 <span className="font-bold text-primary underline">SaaS</span>{" "}
                 Super Fast
               </p>
