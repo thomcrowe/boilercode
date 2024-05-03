@@ -7,24 +7,16 @@ import LandingPricing from "@/components/landingPage/landingPricing";
 import LandingFooter from "@/components/landingPage/landingFooter";
 import LandingCta from "@/components/landingPage/landingCta";
 import { useTheme } from "next-themes";
-import LandingTastimonials from "@/components/landingPage/landingTestimonials";
-import LandingStory from "@/components/landingPage/landingStory";
 import LandingTestimonials from "@/components/landingPage/landingTestimonials";
-import Link from "next/link";
-import React, { useEffect } from "react";
+import LandingStory from "@/components/landingPage/landingStory";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Script from "next/script";
-import * as fbq from "../lib/fpixel";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
-  const handleClick = () => {
-    fbq.event("Purchase", { currency: "USD", value: 10 });
-  };
 
-  useEffect(() => {
-    setTheme("light");
-  }, []);
+  // setTheme("light"); // This line should be moved to useEffect inside the component
 
   return (
     <>
@@ -37,9 +29,22 @@ export default function Home() {
           {/* <LandingPricing /> */}
           <LandingStory />
           <LandingTestimonials />
+          <EventButton /> {/* Added EventButton component */}
         </main>
         <LandingFooter />
       </LandingLayout>
     </>
+  );
+}
+
+export function EventButton() {
+  const handleClick = () => {
+    sendGTMEvent({ event: "buttonClicked", value: "xyz" });
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Send Event</button>
+    </div>
   );
 }
